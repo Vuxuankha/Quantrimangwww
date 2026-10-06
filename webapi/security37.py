@@ -34,6 +34,10 @@ WRITE_RULES = [
  ('POST', r'/api/devices/(\d+/ping|refresh-status)', ('Admin','Operator')),
  ('POST', r'/api/scan', ('Admin',)),
  ('POST', r'/api/scan-results/\d+/import', ('Admin',)),
+ ('PUT', r'/api/v69/router-api/config', ('Admin',)),
+ ('POST', r'/api/v69/router-api/test', ('Admin','Operator')),
+ ('POST', r'/api/v69/router-api/browser-observations', ('Admin','Operator')),
+ ('POST', r'/api/v69/router-api/import', ('Admin',)),
  ('POST', r'/api/alerts/\d+/(close|reopen)', ('Admin','Operator')),
  ('POST', r'/api/server-targets', ('Admin',)),
  ('PUT|DELETE', r'/api/server-targets/\d+', ('Admin',)),
@@ -510,13 +514,20 @@ def install(app):
             # Log only exception type / correlation id, not credentials or SQL values.
             logging.getLogger('web.security').error('request=%s type=%s',request_id,type(e).__name__)
             response=JSONResponse({'detail':'INTERNAL_ERROR; check local logs','request_id':request_id},status_code=500)
+        router_connect_src=''
+        try:
+            from webapi.routerapi69 import browser_connect_origin
+            router_connect_src=browser_connect_origin()
+        except Exception:
+            router_connect_src=''
+        connect_src="'self'" + ((" "+router_connect_src) if router_connect_src else '')
         security_headers={
             'X-Request-ID':request_id,
             'X-Content-Type-Options':'nosniff',
             'X-Frame-Options':'DENY',
             'Referrer-Policy':'no-referrer',
             'Permissions-Policy':'camera=(), microphone=(), geolocation=()',
-            'Content-Security-Policy':"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+            'Content-Security-Policy':f"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src {connect_src}; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
         }
         # HSTS is meaningful only on HTTPS. Render/Uvicorn proxy headers restore
         # request.url.scheme=https from X-Forwarded-Proto at the edge.

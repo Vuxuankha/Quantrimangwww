@@ -51,15 +51,19 @@ def main():
     check('_ensure_username_available' in accounts and 'COLLATE NOCASE' in accounts,'Case-insensitive account collision protection missing')
     check('for token in tokens:' in sec and 'HTTPS_REQUIRED_FOR_REMOTE_SESSION' in sec,'Logout/remote HTTP session hardening missing')
     check('bluesecret62' not in nav and 'bluesecrets62' in nav and 'blueids62' in nav,'White Hat final navigation is inconsistent')
-    check('Hotfix16O Web Production Standards' in index and 'app.js?v=6920' in index,'Hotfix16O cache/version marker missing')
-    check("'vendor/xterm.js'" in (ROOT/'webapi'/'static'/'app.js').read_text(encoding='utf-8'),'Hotfix16O lazy feature bundle missing')
+    check('Hotfix16Q Router API Provider' in index and 'app.js?v=6922' in index,'Hotfix16Q cache/version marker missing')
+    check("'vendor/xterm.js'" in (ROOT/'webapi'/'static'/'app.js').read_text(encoding='utf-8'),'Hotfix16Q lazy feature bundle missing')
     check("api('/v45/ipmac')" in (ROOT/'webapi'/'static'/'cybersecurity51.js').read_text(encoding='utf-8'),'Vulnerability Center still calls missing /api/ipmac route')
     check("HTTPException(404,'Schedule not found')" in (ROOT/'webapi'/'scheduler40.py').read_text(encoding='utf-8'),'Scheduler missing-ID 404 fix missing')
     check("HTTPException(403,'TASK_PERMISSION_DENIED')" in (ROOT/'webapi'/'scheduler40.py').read_text(encoding='utf-8'),'Scheduler role 403 fix missing')
     check("row['can_run']" in (ROOT/'webapi'/'ops40.py').read_text(encoding='utf-8'),'Scheduler role-aware can_run missing')
     check("_sync_schedule_status" in (ROOT/'webapi'/'jobs37.py').read_text(encoding='utf-8'),'Scheduler final-status synchronization missing')
     check((ROOT/'tests'/'test_hotfix15_scheduler_api_stability.py').is_file(),'Hotfix15 regression tests missing')
-    print('PASS: 6.9.0 Hotfix16O Web Production Standards regression smoke checks')
+    router=(ROOT/'webapi'/'routerapi69.py').read_text(encoding='utf-8')
+    routerjs=(ROOT/'webapi'/'static'/'routerapi69.js').read_text(encoding='utf-8')
+    check('ROUTER_API_PRIVATE_DESTINATION_BLOCKED' in router and '_NoRedirect69' in router,'Hotfix16Q Router API SSRF guard missing')
+    check("/v69/router-api/browser-observations" in routerjs and "mode:'cors'" in routerjs,'Hotfix16Q Browser Direct Router API missing')
+    print('PASS: 6.9.0 Hotfix16Q Router API Provider regression smoke checks')
     return 0
 
 

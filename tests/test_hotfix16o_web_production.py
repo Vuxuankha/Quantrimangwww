@@ -26,7 +26,7 @@ def test_login_shell_only_loads_minimal_initial_assets():
 
 
 def test_all_operational_assets_are_versioned_and_lazy_loaded_after_auth():
-    assert "NA_ASSET_VERSION='6920'" in APP
+    assert "NA_ASSET_VERSION='6922'" in APP
     assert "async function loggedIn(){state.user=await api('/auth/me');state.csrf=state.user.csrf_token;await naLoadOperationalAssets();" in APP
     for name in ['operations47.js','operations50.js','cybersecurity51.js','enterprise592.js','security_modes61.js','security_catalog62.js','kali63.js','hotfix9_kali_red.js','hotfix10_nav_core.js']:
         assert repr(name) in APP
@@ -65,7 +65,7 @@ def test_security_middleware_runtime_headers():
 
 def test_health_exposes_ui_and_core_versions_explicitly():
     assert "UI_VERSION='6.9.0'" in RUNTIME
-    assert "RELEASE='Hotfix16O Web Production Standards'" in RUNTIME
+    assert "RELEASE='Hotfix16Q Router API Provider'" in RUNTIME
     assert "'core_version':VERSION" in MAIN
     assert "'ui_version':UI_VERSION" in MAIN
     assert "'release':RELEASE" in MAIN

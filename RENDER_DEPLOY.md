@@ -1,42 +1,40 @@
-# Deploy NetworkAutomation lên Render - Hotfix16O Web Production Standards
+# Deploy NetworkAutomation len Render - Hotfix16Q Router API Provider
 
-## Cách deploy
-- Kết nối repository Git với Render.
-- `render.yaml` đã cấu hình `autoDeploy: true`.
-- Mỗi lần push, Render tự build, chạy kiểm tra production và tự start Web.
-- Không cần chạy BAT, Agent, PowerShell hay chương trình Windows trên máy người dùng.
+## Cach deploy
+- Ket noi repository Git voi Render.
+- `render.yaml` da cau hinh `autoDeploy: true`.
+- Moi lan push, Render tu build, chay release integrity + production gate va tu start Web.
+- Khong can BAT, Agent, PowerShell hay chuong trinh Windows tren may nguoi dung.
 
-## Pipeline tự động
-Build Command trong `render.yaml`:
+## Pipeline tu dong
+Build Command:
 
 `pip install --upgrade pip && pip install -r requirements-render.txt && python VERIFY_RELEASE.py && python QA_PRODUCTION_GATE.py`
 
-Start Command:
+Start Command: `python render_start.py`
 
-`python render_start.py`
+Health Check: `/api/health`
 
-Health Check:
+## Router API Provider
+- Server-side provider chi goi HTTPS endpoint cong khai/cloud. Private, loopback va link-local bi chan.
+- Browser Direct provider chi goi dung HTTPS origin da cau hinh; CSP duoc cap nhat theo origin do sau khi reload.
+- Browser Direct credential chi giu trong `sessionStorage`, khong luu tren Render.
+- LAN scan cu `/api/scan`, queued `SCAN` va auto-discovery tren Render van bi khoa.
 
-`/api/health`
+### UniFi Cloud
+- Tao API key trong UniFi Site Manager.
+- Chon `unifi_cloud`.
+- Dien `console_id`, endpoint Network integration va field mapping trong Options JSON.
+- Render goi `api.ui.com`; Cloud Connector proxy ve console.
 
-## Cấu hình runtime
-`render.yaml` đặt sẵn:
-- `NA_WEB_ONLY_BROWSER=1`
-- `NA_ENABLE_AUTOIP=0`
-- `NA_PUBLIC_REGISTRATION=1`
-- `NA_REGISTRATION_AUTO_ENABLE=1`
-- `NA_COOKIE_SECURE=1`
+### Browser Direct
+Router phai dap ung tat ca:
+- HTTPS certificate duoc browser tin cay.
+- API tra JSON.
+- CORS cho origin cua Web NetworkAutomation.
+- Neu browser ap dung Private Network Access, router/reverse proxy phai cho phep PNA preflight.
 
-`NA_BOOTSTRAP_ADMIN_PASSWORD` vẫn phải là secret của dịch vụ Render. Không hard-code mật khẩu Admin vào Git.
+Neu router chi co `http://192.168.x.x` thi trang HTTPS tren Render khong duoc phep goi truc tiep do mixed-content.
 
-## Web Native Network
-Khi người dùng mở Web, backend nhận IP Internet công khai từ request/proxy và browser có thể đo chất lượng kết nối tới host. Nếu đổi Wi-Fi, 4G/5G hoặc ISP, lần probe tiếp theo cập nhật public IP mới.
-
-Hosted web không thể nhìn xuyên NAT để lấy private IP `192.168.x.x`, MAC/ARP, gateway hay quét LAN của thiết bị người dùng nếu không có local agent. Hotfix16O không giả lập các dữ liệu này.
-
-## Production hardening
-- HTTPS response có HSTS khi request tới app được proxy là HTTPS.
-- CSP, X-Frame-Options, nosniff, Referrer-Policy và Permissions-Policy được bật.
-- HTML/API dùng `Cache-Control: no-store`.
-- Static asset có version dùng cache immutable 1 năm.
-- Login chỉ tải `style.css` + `app.js`; module nặng tải sau khi xác thực.
+## Runtime secrets
+`NA_BOOTSTRAP_ADMIN_PASSWORD` van phai la Render secret. Khong hard-code password/API token vao Git.

@@ -77,6 +77,7 @@ actions['network-detail50']=async()=>{const r=await checkNetwork50(true);if(r)mo
 
 
 const browser16n={active:false,probe:null,timer:null};
+window.naBrowserOnlyMode=()=>browser16n.active;
 async function checkBrowser16n(){
  if(!state.user)return null;
  try{const p=await api('/v59/browser/probe?ts='+Date.now());browser16n.active=true;browser16n.probe=p;paintBrowserIp16n(p);paintBrowserNetwork16n(p);return p;}
@@ -142,6 +143,7 @@ async function pollDiscovery5010(){
 function discoveryDetailHtml5016(r){
  const running=r.state==='RUNNING'||r.state==='QUEUED';
  const progress=r.progress_total?`${r.progress_done||0}/${r.progress_total}`:(running?'đang chuẩn bị':'—');
+ if(String(r.state||'').toUpperCase()==='BROWSER_ONLY')return `<div class="cards">${metric('Trạng thái','BROWSER ONLY','green')}${metric('Subnet','Không khả dụng')}${metric('IP Internet',browser16n.probe?.public_ip||'—')}</div><div class="notice">${esc(r.detail||'Quét LAN từ Render đã bị khóa.')}</div><p class="caption">Hotfix16P không chạy ARP/ICMP discovery trên host Render để tránh hiển thị nhầm mạng của host thành mạng của thiết bị người dùng.</p>`;
  return `<div class="cards">${metric('Trạng thái',r.state||'IDLE')}${metric('Subnet',r.network||'—')}${metric('IP đang dùng',r.active??r.online??0,'green')}${metric('ICMP phản hồi',r.icmp_online??r.online??0)}${metric('LAN thụ động',r.arp_only??r.preliminary_active??0)}${metric('Đồng bộ IP/MAC',r.imported||0)}${metric('Tiến độ',progress)}</div><div class="notice">${esc(r.detail||'')}</div><p class="caption">Quét ưu tiên ARP/neighbor để hiện thiết bị sớm, sau đó ICMP và hợp nhất DHCP/mDNS/SSDP. Thiết bị chặn ping vẫn có thể được nhận diện từ bằng chứng LAN. Không tự quét WAN/Internet và không tự gán credential.</p>${canWrite()?button(running?'Đang quét…':'Quét lại ngay','startup-scan-force5010',{},running?'':'primary'):''}`;
 }
 let discoveryDetailToken5016=0;
@@ -162,7 +164,7 @@ actions['startup-scan-detail5010']=async()=>{
  const token=++discoveryDetailToken5016;
  if(r.state==='RUNNING'||r.state==='QUEUED')setTimeout(()=>void refreshDiscoveryDetail5016(token),700);
 };
-actions['startup-scan-force5010']=async()=>{try{const r=await api('/v50/startup-discovery/ensure?force=true',{method:'POST',body:'{}'});paintDiscovery5010(r);toast('Đã yêu cầu quét IP đang dùng trong LAN.');}catch(e){toast(e.message||String(e),true)}};
+actions['startup-scan-force5010']=async()=>{try{const r=await api('/v50/startup-discovery/ensure?force=true',{method:'POST',body:'{}'});paintDiscovery5010(r);if(String(r.state||'').toUpperCase()==='BROWSER_ONLY')toast('Bản Web-only không quét LAN trên Render; không có lệnh LAN nào được chạy trên host.');else toast('Đã yêu cầu quét IP đang dùng trong LAN.');}catch(e){toast(e.message||String(e),true)}};
 
 window.addEventListener('na46:ready',()=>{
  const n=document.querySelector('.brand small');if(n)n.textContent='Cybersecurity / UI 6.9.0';const notice=document.querySelector('main>.notice');if(notice)notice.textContent='NetworkAutomation Web: tự nhận IP Internet công khai và đo kết nối từ thiết bị đang mở trang.';

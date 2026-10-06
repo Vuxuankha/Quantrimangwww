@@ -1,0 +1,2138 @@
+
+--- service child start 2026-10-06 15:28:23 restart=0 ---
+RELEASE OK: 5.9.2-cybersecurity - 275 code/asset files
+INFO:     Started server process [14272]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:50899 - "GET /api/health HTTP/1.1" 200 OK
+READY: http://127.0.0.1:8765/ 
+Data: C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\runtime_data
+Starting network scan: 192.168.2.0/24
+Scanning: 192.168.2.1
+Scanning: 192.168.2.2
+Scanning: 192.168.2.3
+Scanning: 192.168.2.4
+Scanning: 192.168.2.5
+Scanning: 192.168.2.6
+Scanning: 192.168.2.7
+Scanning: 192.168.2.8
+Scanning: 192.168.2.9
+Scanning: 192.168.2.10
+Scanning: 192.168.2.11
+Scanning: 192.168.2.12
+Scanning: 192.168.2.13
+Scanning: 192.168.2.14
+Scanning: 192.168.2.15
+Scanning: 192.168.2.16
+Scanning: 192.168.2.17
+Scanning: 192.168.2.18
+Scanning: 192.168.2.19
+Scanning: 192.168.2.20
+Scanning: 192.168.2.21
+Scanning: 192.168.2.22
+Scanning: 192.168.2.23
+Scanning: 192.168.2.24
+Scanning: 192.168.2.25
+Scanning: 192.168.2.26
+Scanning: 192.168.2.27
+Scanning: 192.168.2.28
+Scanning: 192.168.2.29
+Scanning: 192.168.2.30
+Scanning: 192.168.2.31
+Scanning: 192.168.2.32
+Scanning: 192.168.2.33
+Scanning: 192.168.2.34
+Scanning: 192.168.2.35
+Scanning: 192.168.2.36
+Scanning: 192.168.2.37
+Scanning: 192.168.2.38
+Scanning: 192.168.2.39
+Scanning: 192.168.2.40
+Scanning: 192.168.2.41
+Scanning: 192.168.2.42
+Scanning: 192.168.2.43
+Scanning: 192.168.2.44
+Scanning: 192.168.2.45
+Scanning: 192.168.2.46
+Scanning: 192.168.2.47
+Scanning: 192.168.2.49Scanning: 192.168.2.48
+
+Scanning: 192.168.2.50
+Scanning: 192.168.2.51
+Scanning: 192.168.2.52
+Scanning: 192.168.2.53
+Scanning: 192.168.2.54
+Scanning: 192.168.2.55
+Scanning: 192.168.2.56
+Scanning: 192.168.2.57
+Scanning: 192.168.2.58
+Scanning: 192.168.2.59
+Scanning: 192.168.2.60
+Scanning: 192.168.2.61
+Scanning: 192.168.2.62
+Scanning: 192.168.2.63
+Scanning: 192.168.2.64Scanning: 192.168.2.65Scanning: 192.168.2.66
+
+Scanning: 192.168.2.67Scanning: 192.168.2.68
+Scanning: 192.168.2.69
+
+
+Scanning: 192.168.2.70
+Scanning: 192.168.2.71
+Scanning: 192.168.2.72
+Scanning: 192.168.2.73
+Scanning: 192.168.2.74
+Scanning: 192.168.2.75
+Scanning: 192.168.2.76
+Scanning: 192.168.2.77Scanning: 192.168.2.78Scanning: 192.168.2.79
+
+Scanning: 192.168.2.80
+Scanning: 192.168.2.81
+Scanning: 192.168.2.82Scanning: 192.168.2.83
+Scanning: 192.168.2.84
+Scanning: 192.168.2.85
+
+Scanning: 192.168.2.86
+Scanning: 192.168.2.87
+
+Scanning: 192.168.2.88
+Scanning: 192.168.2.89
+Scanning: 192.168.2.90
+Scanning: 192.168.2.91
+Scanning: 192.168.2.92
+Scanning: 192.168.2.93Scanning: 192.168.2.94
+
+Scanning: 192.168.2.95
+Scanning: 192.168.2.96
+Scanning: 192.168.2.97
+Scanning: 192.168.2.98
+Scanning: 192.168.2.99
+Scanning: 192.168.2.100
+Scanning: 192.168.2.101
+Scanning: 192.168.2.102
+Scanning: 192.168.2.103
+Scanning: 192.168.2.104
+Scanning: 192.168.2.105
+Scanning: 192.168.2.106
+Scanning: 192.168.2.107Scanning: 192.168.2.108
+
+Scanning: 192.168.2.109Scanning: 192.168.2.110
+Scanning: 192.168.2.111
+
+Scanning: 192.168.2.112Scanning: 192.168.2.113Scanning: 192.168.2.114
+Scanning: 192.168.2.115
+
+
+Scanning: 192.168.2.116
+Scanning: 192.168.2.117Scanning: 192.168.2.118Scanning: 192.168.2.119
+Scanning: 192.168.2.120
+Scanning: 192.168.2.121
+
+Scanning: 192.168.2.122
+
+Scanning: 192.168.2.123Scanning: 192.168.2.124Scanning: 192.168.2.125
+Scanning: 192.168.2.126
+Scanning: 192.168.2.127
+Scanning: 192.168.2.128
+Scanning: 192.168.2.129
+
+Scanning: 192.168.2.130Scanning: 192.168.2.131Scanning: 192.168.2.132
+
+Scanning: 192.168.2.133
+Scanning: 192.168.2.134
+Scanning: 192.168.2.135
+Scanning: 192.168.2.136
+Scanning: 192.168.2.137
+Scanning: 192.168.2.138
+
+
+Scanning: 192.168.2.139
+Scanning: 192.168.2.140
+Scanning: 192.168.2.141
+Scanning: 192.168.2.142
+Scanning: 192.168.2.143
+Scanning: 192.168.2.144
+Scanning: 192.168.2.145
+Scanning: 192.168.2.146Scanning: 192.168.2.147
+
+Scanning: 192.168.2.148
+Scanning: 192.168.2.149
+Scanning: 192.168.2.150
+Scanning: 192.168.2.151Scanning: 192.168.2.152
+
+Scanning: 192.168.2.153Scanning: 192.168.2.154
+
+Scanning: 192.168.2.155
+Scanning: 192.168.2.156
+Scanning: 192.168.2.157
+Scanning: 192.168.2.158
+Scanning: 192.168.2.159
+Scanning: 192.168.2.160
+Scanning: 192.168.2.161
+Scanning: 192.168.2.162Scanning: 192.168.2.163
+
+Scanning: 192.168.2.164
+Scanning: 192.168.2.165
+Scanning: 192.168.2.166Scanning: 192.168.2.167Scanning: 192.168.2.168Scanning: 192.168.2.169
+Scanning: 192.168.2.170Scanning: 192.168.2.171
+
+
+Scanning: 192.168.2.172
+
+
+Scanning: 192.168.2.173
+Scanning: 192.168.2.174Scanning: 192.168.2.175
+Scanning: 192.168.2.176
+Scanning: 192.168.2.177
+Scanning: 192.168.2.178
+Scanning: 192.168.2.179
+Scanning: 192.168.2.180
+
+Scanning: 192.168.2.181
+Scanning: 192.168.2.182
+Scanning: 192.168.2.183
+Scanning: 192.168.2.184
+Scanning: 192.168.2.185
+Scanning: 192.168.2.186
+Scanning: 192.168.2.187
+Scanning: 192.168.2.188
+Scanning: 192.168.2.189Scanning: 192.168.2.190
+Scanning: 192.168.2.191
+Scanning: 192.168.2.192Scanning: 192.168.2.193Scanning: 192.168.2.194
+Scanning: 192.168.2.195
+
+Scanning: 192.168.2.196
+Scanning: 192.168.2.197Scanning: 192.168.2.198
+Scanning: 192.168.2.199
+
+Scanning: 192.168.2.200
+Scanning: 192.168.2.201
+Scanning: 192.168.2.202
+Scanning: 192.168.2.203
+
+Scanning: 192.168.2.204
+Scanning: 192.168.2.205
+Scanning: 192.168.2.206
+Scanning: 192.168.2.207
+
+Scanning: 192.168.2.208
+Scanning: 192.168.2.209
+Scanning: 192.168.2.210
+Scanning: 192.168.2.211Scanning: 192.168.2.212
+
+Scanning: 192.168.2.213
+Scanning: 192.168.2.214
+Scanning: 192.168.2.215
+Scanning: 192.168.2.216
+Scanning: 192.168.2.217
+Scanning: 192.168.2.218
+Scanning: 192.168.2.219Scanning: 192.168.2.220
+Scanning: 192.168.2.221
+Scanning: 192.168.2.222
+
+Scanning: 192.168.2.223
+Scanning: 192.168.2.224
+Scanning: 192.168.2.225
+Scanning: 192.168.2.226
+Scanning: 192.168.2.227
+Scanning: 192.168.2.228Scanning: 192.168.2.229
+
+Scanning: 192.168.2.230
+Scanning: 192.168.2.231
+Scanning: 192.168.2.232
+Scanning: 192.168.2.233
+Scanning: 192.168.2.234
+Scanning: 192.168.2.235
+Scanning: 192.168.2.236
+Scanning: 192.168.2.237
+Scanning: 192.168.2.238
+Scanning: 192.168.2.239
+Scanning: 192.168.2.240
+Scanning: 192.168.2.241Scanning: 192.168.2.242
+
+Scanning: 192.168.2.243
+Scanning: 192.168.2.244
+Scanning: 192.168.2.245
+Scanning: 192.168.2.246
+Scanning: 192.168.2.247Scanning: 192.168.2.248
+
+Scanning: 192.168.2.249
+Scanning: 192.168.2.250
+Scanning: 192.168.2.251
+Scanning: 192.168.2.252
+Scanning: 192.168.2.253
+Scanning: 192.168.2.254
+Network scan completed.
+INFO:     127.0.0.1:50914 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50915 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58574 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58574 - "GET /static/style.css?v=6920 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61944 - "GET /static/app.js?v=6920 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61944 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61944 - "GET /api/auth/me HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:58574 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53815 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61944 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57701 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57701 - "GET /api/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57701 - "GET /static/workbench45.css?v=6920 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50067 - "GET /static/terminal46.css?v=6920 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58429 - "GET /static/vendor/xterm.css?v=6920 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49911 - "GET /static/operations50.css?v=6920 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54042 - "GET /static/cybersecurity51.css?v=6920 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60098 - "GET /static/operations47.css?v=6920 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57701 - "GET /static/enterprise592.css?v=6920 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50067 - "GET /static/security_modes61.css?v=6920 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58429 - "GET /static/enterprise600.css?v=6920 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58429 - "GET /static/workbench45.js?v=6920 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58429 - "GET /static/vendor/xterm.js?v=6920 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58429 - "GET /static/live46.js?v=6920 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58429 - "GET /static/terminal46.js?v=6920 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58429 - "GET /static/operations47.js?v=6920 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58429 - "GET /static/operations50.js?v=6920 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58429 - "GET /static/cybersecurity51.js?v=6920 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58429 - "GET /static/enterprise592.js?v=6920 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58429 - "GET /static/enterprise600.js?v=6920 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58429 - "GET /static/security_modes61.js?v=6920 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58429 - "GET /static/security_catalog62.js?v=6920 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58429 - "GET /static/kali63.js?v=6920 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58429 - "GET /static/hotfix9_kali_red.js?v=6920 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58429 - "GET /static/hotfix10_nav_core.js?v=6920 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54042 - "GET /api/v58/endpoints HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50067 - "GET /api/v51/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49911 - "GET /api/v55/risk/assets?limit=8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54042 - "GET /api/v55/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49911 - "GET /api/devices/presence-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54042 - "GET /api/devices/presence-history?limit=40 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57701 - "GET /api/v57/daily HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49911 - "GET /api/devices/identity-conflicts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54042 - "GET /api/v68/automation HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58429 - "GET /api/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50067 - "GET /api/devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50067 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50067 - "GET /api/v47/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60098 - "GET /api/v59/network/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60098 - "GET /api/v59/browser/probe?ts=1791275339717 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64382 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63791 - "GET /api/v68/automation HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63791 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58810 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58810 - "GET /api/scan-results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58810 - "GET /api/scan-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58810 - "GET /api/v59/browser/probe?ts=1791275362570 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58810 - "GET /api/v45/ipmac HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58810 - "GET /api/v59/browser/probe?ts=1791275365218 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58810 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "POST /api/v50/startup-discovery/ensure?force=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+Starting network scan: 192.168.2.0/24
+Scanning: 192.168.2.1
+Scanning: 192.168.2.2
+Scanning: 192.168.2.3
+Scanning: 192.168.2.4
+Scanning: 192.168.2.5
+Scanning: 192.168.2.6
+Scanning: 192.168.2.7
+Scanning: 192.168.2.8
+Scanning: 192.168.2.9
+Scanning: 192.168.2.10
+Scanning: 192.168.2.11
+Scanning: 192.168.2.12
+Scanning: 192.168.2.13
+Scanning: 192.168.2.14
+Scanning: 192.168.2.15
+Scanning: 192.168.2.16
+Scanning: 192.168.2.17
+Scanning: 192.168.2.18
+Scanning: 192.168.2.19
+Scanning: 192.168.2.20
+Scanning: 192.168.2.21
+Scanning: 192.168.2.22
+Scanning: 192.168.2.23
+Scanning: 192.168.2.24
+Scanning: 192.168.2.25
+Scanning: 192.168.2.26
+Scanning: 192.168.2.27
+Scanning: 192.168.2.28
+Scanning: 192.168.2.29
+Scanning: 192.168.2.30
+Scanning: 192.168.2.31
+Scanning: 192.168.2.32
+Scanning: 192.168.2.33
+Scanning: 192.168.2.34
+Scanning: 192.168.2.35
+Scanning: 192.168.2.36
+Scanning: 192.168.2.37
+Scanning: 192.168.2.38
+Scanning: 192.168.2.39
+Scanning: 192.168.2.40
+Scanning: 192.168.2.41
+Scanning: 192.168.2.42
+Scanning: 192.168.2.43
+Scanning: 192.168.2.44
+Scanning: 192.168.2.45
+Scanning: 192.168.2.46
+Scanning: 192.168.2.47
+Scanning: 192.168.2.48
+Scanning: 192.168.2.49
+Scanning: 192.168.2.50
+Scanning: 192.168.2.51Scanning: 192.168.2.52
+
+Scanning: 192.168.2.53
+Scanning: 192.168.2.54
+Scanning: 192.168.2.55
+Scanning: 192.168.2.56
+Scanning: 192.168.2.57Scanning: 192.168.2.58
+
+Scanning: 192.168.2.59
+Scanning: 192.168.2.60
+Scanning: 192.168.2.61
+Scanning: 192.168.2.62Scanning: 192.168.2.63
+Scanning: 192.168.2.64
+Scanning: 192.168.2.65Scanning: 192.168.2.66
+
+
+Scanning: 192.168.2.67Scanning: 192.168.2.68
+Scanning: 192.168.2.69
+
+Scanning: 192.168.2.70Scanning: 192.168.2.71
+Scanning: 192.168.2.72Scanning: 192.168.2.73
+
+Scanning: 192.168.2.74Scanning: 192.168.2.75
+Scanning: 192.168.2.76
+
+Scanning: 192.168.2.77
+
+Scanning: 192.168.2.78
+Scanning: 192.168.2.79
+Scanning: 192.168.2.80
+Scanning: 192.168.2.81
+Scanning: 192.168.2.82
+Scanning: 192.168.2.83
+Scanning: 192.168.2.84
+Scanning: 192.168.2.85Scanning: 192.168.2.86
+Scanning: 192.168.2.87
+
+Scanning: 192.168.2.88
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+Scanning: 192.168.2.89
+Scanning: 192.168.2.90
+Scanning: 192.168.2.91
+Scanning: 192.168.2.92
+Scanning: 192.168.2.93
+Scanning: 192.168.2.94
+Scanning: 192.168.2.95
+Scanning: 192.168.2.96
+Scanning: 192.168.2.97
+Scanning: 192.168.2.98
+Scanning: 192.168.2.99
+Scanning: 192.168.2.100
+Scanning: 192.168.2.101
+Scanning: 192.168.2.102
+Scanning: 192.168.2.103
+Scanning: 192.168.2.104
+Scanning: 192.168.2.105
+Scanning: 192.168.2.106Scanning: 192.168.2.107
+
+Scanning: 192.168.2.108Scanning: 192.168.2.109
+Scanning: 192.168.2.110
+Scanning: 192.168.2.111
+
+Scanning: 192.168.2.112Scanning: 192.168.2.113
+Scanning: 192.168.2.114Scanning: 192.168.2.115
+
+Scanning: 192.168.2.116Scanning: 192.168.2.117Scanning: 192.168.2.118
+
+Scanning: 192.168.2.119
+
+Scanning: 192.168.2.120Scanning: 192.168.2.121
+Scanning: 192.168.2.122Scanning: 192.168.2.123Scanning: 192.168.2.124Scanning: 192.168.2.125
+Scanning: 192.168.2.126Scanning: 192.168.2.127
+
+
+Scanning: 192.168.2.128
+Scanning: 192.168.2.129
+Scanning: 192.168.2.130
+
+
+Scanning: 192.168.2.131
+Scanning: 192.168.2.132
+Scanning: 192.168.2.133
+Scanning: 192.168.2.134
+
+Scanning: 192.168.2.135
+Scanning: 192.168.2.136Scanning: 192.168.2.137Scanning: 192.168.2.138
+Scanning: 192.168.2.139
+
+Scanning: 192.168.2.140Scanning: 192.168.2.141
+Scanning: 192.168.2.142
+
+Scanning: 192.168.2.143
+
+Scanning: 192.168.2.144
+Scanning: 192.168.2.145
+
+Scanning: 192.168.2.146
+Scanning: 192.168.2.147
+Scanning: 192.168.2.148
+Scanning: 192.168.2.149
+Scanning: 192.168.2.150Scanning: 192.168.2.151
+
+Scanning: 192.168.2.152Scanning: 192.168.2.153
+Scanning: 192.168.2.154
+
+Scanning: 192.168.2.155
+Scanning: 192.168.2.156
+Scanning: 192.168.2.157
+Scanning: 192.168.2.158
+Scanning: 192.168.2.159Scanning: 192.168.2.160
+
+Scanning: 192.168.2.161Scanning: 192.168.2.162
+
+Scanning: 192.168.2.163
+Scanning: 192.168.2.164
+Scanning: 192.168.2.165Scanning: 192.168.2.166
+Scanning: 192.168.2.167
+Scanning: 192.168.2.168Scanning: 192.168.2.169
+Scanning: 192.168.2.170Scanning: 192.168.2.171
+Scanning: 192.168.2.172Scanning: 192.168.2.173
+Scanning: 192.168.2.174
+
+Scanning: 192.168.2.175
+Scanning: 192.168.2.176
+
+Scanning: 192.168.2.177Scanning: 192.168.2.178
+
+
+Scanning: 192.168.2.179Scanning: 192.168.2.180Scanning: 192.168.2.181
+Scanning: 192.168.2.182
+
+Scanning: 192.168.2.183
+
+Scanning: 192.168.2.184
+Scanning: 192.168.2.185
+
+Scanning: 192.168.2.186
+Scanning: 192.168.2.187
+Scanning: 192.168.2.188
+Scanning: 192.168.2.189
+Scanning: 192.168.2.190
+Scanning: 192.168.2.191Scanning: 192.168.2.192
+Scanning: 192.168.2.193
+
+Scanning: 192.168.2.194Scanning: 192.168.2.195
+Scanning: 192.168.2.196
+
+Scanning: 192.168.2.197Scanning: 192.168.2.198
+
+Scanning: 192.168.2.199Scanning: 192.168.2.200
+Scanning: 192.168.2.201
+Scanning: 192.168.2.202Scanning: 192.168.2.203
+
+
+Scanning: 192.168.2.204
+Scanning: 192.168.2.205Scanning: 192.168.2.206
+Scanning: 192.168.2.207Scanning: 192.168.2.208
+
+
+Scanning: 192.168.2.209
+Scanning: 192.168.2.210Scanning: 192.168.2.211Scanning: 192.168.2.212Scanning: 192.168.2.213
+Scanning: 192.168.2.214
+Scanning: 192.168.2.215
+Scanning: 192.168.2.216Scanning: 192.168.2.217
+
+
+Scanning: 192.168.2.218
+
+Scanning: 192.168.2.219Scanning: 192.168.2.220
+Scanning: 192.168.2.221
+
+Scanning: 192.168.2.222Scanning: 192.168.2.223Scanning: 192.168.2.224
+Scanning: 192.168.2.225
+Scanning: 192.168.2.226Scanning: 192.168.2.227Scanning: 192.168.2.228
+
+
+
+
+Scanning: 192.168.2.229
+Scanning: 192.168.2.230
+
+Scanning: 192.168.2.231
+Scanning: 192.168.2.232
+Scanning: 192.168.2.233
+Scanning: 192.168.2.234
+Scanning: 192.168.2.235
+Scanning: 192.168.2.236
+Scanning: 192.168.2.237
+Scanning: 192.168.2.238
+Scanning: 192.168.2.239
+Scanning: 192.168.2.240
+Scanning: 192.168.2.241
+Scanning: 192.168.2.242
+Scanning: 192.168.2.243
+Scanning: 192.168.2.244
+Scanning: 192.168.2.245Scanning: 192.168.2.246
+
+Scanning: 192.168.2.247
+Scanning: 192.168.2.248
+Scanning: 192.168.2.249
+Scanning: 192.168.2.250Scanning: 192.168.2.251
+
+Scanning: 192.168.2.252
+Scanning: 192.168.2.253Scanning: 192.168.2.254
+
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+Network scan completed.
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v47/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60150 - "GET /api/v59/browser/probe?ts=1791275399721 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53127 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56346 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50604 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50604 - "GET /api/v47/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56167 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51052 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51052 - "GET /api/v47/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61254 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52766 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52766 - "GET /api/v47/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50388 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50388 - "GET /api/v47/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56487 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57423 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v47/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57423 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64940 - "GET /api/v59/browser/probe?ts=1791275819723 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53675 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51806 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51806 - "GET /api/v47/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51648 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62032 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58258 - "GET /api/health HTTP/1.1" 200 OK
+Starting network scan: 192.168.2.0/24
+Scanning: 192.168.2.1
+Scanning: 192.168.2.2
+Scanning: 192.168.2.3
+Scanning: 192.168.2.4
+Scanning: 192.168.2.5
+Scanning: 192.168.2.6
+Scanning: 192.168.2.7
+Scanning: 192.168.2.8
+Scanning: 192.168.2.9
+Scanning: 192.168.2.10
+Scanning: 192.168.2.11
+Scanning: 192.168.2.12
+Scanning: 192.168.2.13
+Scanning: 192.168.2.14
+Scanning: 192.168.2.15
+Scanning: 192.168.2.16
+Scanning: 192.168.2.17
+Scanning: 192.168.2.18
+Scanning: 192.168.2.19
+Scanning: 192.168.2.20
+Scanning: 192.168.2.21
+Scanning: 192.168.2.22
+Scanning: 192.168.2.23
+Scanning: 192.168.2.24
+Scanning: 192.168.2.25
+Scanning: 192.168.2.26
+Scanning: 192.168.2.27
+Scanning: 192.168.2.28
+Scanning: 192.168.2.29
+Scanning: 192.168.2.30
+Scanning: 192.168.2.31
+Scanning: 192.168.2.32
+Scanning: 192.168.2.33
+Scanning: 192.168.2.34
+Scanning: 192.168.2.35
+Scanning: 192.168.2.36
+Scanning: 192.168.2.37
+Scanning: 192.168.2.38
+Scanning: 192.168.2.39
+Scanning: 192.168.2.40
+Scanning: 192.168.2.41
+Scanning: 192.168.2.42
+Scanning: 192.168.2.43
+Scanning: 192.168.2.44
+Scanning: 192.168.2.45
+Scanning: 192.168.2.46
+Scanning: 192.168.2.47
+Scanning: 192.168.2.48
+Scanning: 192.168.2.49
+Scanning: 192.168.2.51Scanning: 192.168.2.50
+
+Scanning: 192.168.2.52
+Scanning: 192.168.2.53Scanning: 192.168.2.54
+
+Scanning: 192.168.2.55
+Scanning: 192.168.2.56
+Scanning: 192.168.2.57
+Scanning: 192.168.2.58
+Scanning: 192.168.2.59Scanning: 192.168.2.60Scanning: 192.168.2.61
+
+
+Scanning: 192.168.2.62Scanning: 192.168.2.63
+Scanning: 192.168.2.64
+
+Scanning: 192.168.2.65
+Scanning: 192.168.2.66
+Scanning: 192.168.2.67
+Scanning: 192.168.2.68
+Scanning: 192.168.2.69
+Scanning: 192.168.2.70
+Scanning: 192.168.2.71
+Scanning: 192.168.2.72
+Scanning: 192.168.2.73
+Scanning: 192.168.2.74Scanning: 192.168.2.75
+Scanning: 192.168.2.76Scanning: 192.168.2.77
+Scanning: 192.168.2.78
+Scanning: 192.168.2.79
+
+Scanning: 192.168.2.80
+Scanning: 192.168.2.81
+Scanning: 192.168.2.82
+Scanning: 192.168.2.83
+Scanning: 192.168.2.84
+Scanning: 192.168.2.85
+
+Scanning: 192.168.2.86
+Scanning: 192.168.2.87
+Scanning: 192.168.2.88
+Scanning: 192.168.2.89
+Scanning: 192.168.2.90
+Scanning: 192.168.2.91
+Scanning: 192.168.2.92
+Scanning: 192.168.2.93Scanning: 192.168.2.94
+
+Scanning: 192.168.2.95
+Scanning: 192.168.2.96
+Scanning: 192.168.2.97
+Scanning: 192.168.2.98
+Scanning: 192.168.2.99
+Scanning: 192.168.2.100
+Scanning: 192.168.2.101
+Scanning: 192.168.2.102
+Scanning: 192.168.2.103
+Scanning: 192.168.2.104Scanning: 192.168.2.105
+Scanning: 192.168.2.106
+
+Scanning: 192.168.2.107
+Scanning: 192.168.2.108Scanning: 192.168.2.109
+
+Scanning: 192.168.2.110Scanning: 192.168.2.111
+Scanning: 192.168.2.112
+Scanning: 192.168.2.113
+Scanning: 192.168.2.114
+Scanning: 192.168.2.115Scanning: 192.168.2.116Scanning: 192.168.2.117Scanning: 192.168.2.118Scanning: 192.168.2.119
+Scanning: 192.168.2.120Scanning: 192.168.2.121
+
+
+
+Scanning: 192.168.2.122Scanning: 192.168.2.123
+
+Scanning: 192.168.2.124Scanning: 192.168.2.125Scanning: 192.168.2.126Scanning: 192.168.2.127
+Scanning: 192.168.2.128Scanning: 192.168.2.129
+Scanning: 192.168.2.130
+
+Scanning: 192.168.2.131
+Scanning: 192.168.2.132
+
+Scanning: 192.168.2.133
+Scanning: 192.168.2.134
+
+Scanning: 192.168.2.135
+
+
+Scanning: 192.168.2.136
+
+Scanning: 192.168.2.137
+Scanning: 192.168.2.138
+Scanning: 192.168.2.139
+Scanning: 192.168.2.140
+Scanning: 192.168.2.141
+Scanning: 192.168.2.142
+
+Scanning: 192.168.2.143
+Scanning: 192.168.2.144
+Scanning: 192.168.2.145
+Scanning: 192.168.2.146
+Scanning: 192.168.2.147
+Scanning: 192.168.2.148
+Scanning: 192.168.2.149
+Scanning: 192.168.2.150
+Scanning: 192.168.2.151
+Scanning: 192.168.2.152
+Scanning: 192.168.2.153
+Scanning: 192.168.2.154
+Scanning: 192.168.2.155
+Scanning: 192.168.2.156
+Scanning: 192.168.2.157
+Scanning: 192.168.2.158
+Scanning: 192.168.2.159
+Scanning: 192.168.2.160
+Scanning: 192.168.2.161
+Scanning: 192.168.2.162
+Scanning: 192.168.2.163
+Scanning: 192.168.2.164Scanning: 192.168.2.165
+
+Scanning: 192.168.2.166
+Scanning: 192.168.2.167
+Scanning: 192.168.2.168Scanning: 192.168.2.169Scanning: 192.168.2.170
+Scanning: 192.168.2.171Scanning: 192.168.2.172
+Scanning: 192.168.2.173
+
+Scanning: 192.168.2.174
+
+Scanning: 192.168.2.175
+
+Scanning: 192.168.2.176
+Scanning: 192.168.2.177Scanning: 192.168.2.178
+Scanning: 192.168.2.179
+Scanning: 192.168.2.180
+
+Scanning: 192.168.2.181
+Scanning: 192.168.2.182
+Scanning: 192.168.2.183
+Scanning: 192.168.2.184
+Scanning: 192.168.2.185
+Scanning: 192.168.2.186Scanning: 192.168.2.187
+Scanning: 192.168.2.188Scanning: 192.168.2.189
+Scanning: 192.168.2.190Scanning: 192.168.2.191
+Scanning: 192.168.2.192
+Scanning: 192.168.2.193
+Scanning: 192.168.2.194
+Scanning: 192.168.2.195
+Scanning: 192.168.2.196
+Scanning: 192.168.2.197
+Scanning: 192.168.2.198Scanning: 192.168.2.199
+Scanning: 192.168.2.200
+
+Scanning: 192.168.2.201
+
+
+
+Scanning: 192.168.2.202
+Scanning: 192.168.2.203
+Scanning: 192.168.2.204
+Scanning: 192.168.2.205Scanning: 192.168.2.206
+
+Scanning: 192.168.2.207Scanning: 192.168.2.208
+
+Scanning: 192.168.2.209
+Scanning: 192.168.2.210
+Scanning: 192.168.2.211Scanning: 192.168.2.212Scanning: 192.168.2.213
+Scanning: 192.168.2.214
+Scanning: 192.168.2.215
+Scanning: 192.168.2.216
+
+
+Scanning: 192.168.2.217Scanning: 192.168.2.218
+Scanning: 192.168.2.219
+
+Scanning: 192.168.2.220
+Scanning: 192.168.2.221
+Scanning: 192.168.2.222
+Scanning: 192.168.2.223
+Scanning: 192.168.2.224
+Scanning: 192.168.2.225
+Scanning: 192.168.2.226
+Scanning: 192.168.2.227
+Scanning: 192.168.2.228Scanning: 192.168.2.229
+
+Scanning: 192.168.2.230
+Scanning: 192.168.2.231
+Scanning: 192.168.2.232
+Scanning: 192.168.2.233
+Scanning: 192.168.2.234
+Scanning: 192.168.2.235
+Scanning: 192.168.2.236
+Scanning: 192.168.2.237
+Scanning: 192.168.2.238
+Scanning: 192.168.2.239Scanning: 192.168.2.240
+Scanning: 192.168.2.241
+
+Scanning: 192.168.2.242
+Scanning: 192.168.2.243
+Scanning: 192.168.2.244
+Scanning: 192.168.2.245Scanning: 192.168.2.246
+
+Scanning: 192.168.2.247
+Scanning: 192.168.2.248Scanning: 192.168.2.249
+
+Scanning: 192.168.2.250
+Scanning: 192.168.2.251
+Scanning: 192.168.2.252
+Scanning: 192.168.2.253
+Scanning: 192.168.2.254
+Network scan completed.
+INFO:     127.0.0.1:54808 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/v59/browser/probe?ts=1791275955854 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53903 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/v47/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54808 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/v50/startup-discovery HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/v50/startup-discovery HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/v50/connected-devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/scan-results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/scan-history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/v59/browser/probe?ts=1791275982122 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59787 - "GET /api/v51/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63304 - "GET /api/v58/endpoints HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62228 - "GET /api/v55/risk/assets?limit=8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62228 - "GET /api/devices/presence-state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59787 - "GET /api/v55/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62228 - "GET /api/devices/presence-history?limit=40 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62073 - "GET /api/v57/daily HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59787 - "GET /api/devices/identity-conflicts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62228 - "GET /api/v68/automation HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63304 - "GET /api/devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63304 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55916 - "GET /api/v59/network/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55916 - "GET /api/v59/browser/probe?ts=1791275986382 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63304 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55916 - "POST /api/v68/automation/run-now HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55916 - "GET /api/v68/automation HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63304 - "GET /api/v59/network/history?limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55916 - "GET /api/v59/network/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55916 - "GET /api/v59/browser/probe?ts=1791275995544 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55916 - "GET /api/v59/browser/probe HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55916 - "GET /api/v59/browser/ping?x=1791275995900_0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55916 - "GET /api/v59/browser/ping?x=1791275995988_1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55916 - "GET /api/v59/browser/ping?x=1791275996083_2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55916 - "GET /api/v59/browser/ping?x=1791275996172_3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55916 - "GET /api/v59/browser/ping?x=1791275996266_4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55916 - "POST /api/v59/browser/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63304 - "GET /api/v59/network/history?limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63304 - "GET /api/v59/browser/probe HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63304 - "GET /api/v59/browser/ping?x=1791275997903_0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63304 - "GET /api/v59/browser/ping?x=1791275997990_1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63304 - "GET /api/v59/browser/ping?x=1791275998084_2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63304 - "GET /api/v59/browser/ping?x=1791275998173_3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63304 - "GET /api/v59/browser/ping?x=1791275998268_4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63304 - "POST /api/v59/browser/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63304 - "GET /api/v59/network/history?limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55916 - "GET /api/v59/network/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55916 - "GET /api/v59/browser/probe?ts=1791275999726 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63304 - "GET /api/v59/network/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63304 - "GET /api/v59/browser/probe?ts=1791276000933 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63304 - "GET /api/v59/browser/ping?x=1791276002602_0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63304 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63304 - "GET /api/v59/browser/ping?x=1791276002689_1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63304 - "GET /api/v59/browser/ping?x=1791276002783_2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63304 - "GET /api/v59/browser/ping?x=1791276002880_3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63304 - "GET /api/v59/browser/download?bytes=5242880&x=1791276002975 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63304 - "POST /api/v59/browser/upload HTTP/1.1" 413 Content Too Large
+INFO:     127.0.0.1:63304 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62230 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62230 - "GET /api/v47/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54220 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57174 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51931 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57366 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57366 - "GET /api/v47/session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50021 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61441 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50261 - "GET /api/v59/browser/probe?ts=1791276250314 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50261 - "GET /api/v47/session HTTP/1.1" 200 OK
+Starting network scan: 192.168.2.0/24
+Scanning: 192.168.2.1
+Scanning: 192.168.2.2
+Scanning: 192.168.2.3
+Scanning: 192.168.2.4
+Scanning: 192.168.2.5
+Scanning: 192.168.2.6
+Scanning: 192.168.2.7
+Scanning: 192.168.2.8
+Scanning: 192.168.2.9
+Scanning: 192.168.2.10
+Scanning: 192.168.2.11
+Scanning: 192.168.2.12
+Scanning: 192.168.2.13
+Scanning: 192.168.2.14
+Scanning: 192.168.2.15
+Scanning: 192.168.2.16
+Scanning: 192.168.2.17
+Scanning: 192.168.2.18
+Scanning: 192.168.2.19
+Scanning: 192.168.2.20
+Scanning: 192.168.2.21
+Scanning: 192.168.2.22
+Scanning: 192.168.2.23
+Scanning: 192.168.2.24Scanning: 192.168.2.25
+Scanning: 192.168.2.26
+
+Scanning: 192.168.2.31
+Scanning: 192.168.2.27
+Scanning: 192.168.2.29Scanning: 192.168.2.28
+Scanning: 192.168.2.35
+Scanning: 192.168.2.30
+Scanning: 192.168.2.37
+Scanning: 192.168.2.36
+
+Scanning: 192.168.2.32
+Scanning: 192.168.2.34Scanning: 192.168.2.33
+
+Scanning: 192.168.2.38Scanning: 192.168.2.39
+Scanning: 192.168.2.42Scanning: 192.168.2.44
+
+
+Scanning: 192.168.2.40Scanning: 192.168.2.41
+
+Scanning: 192.168.2.43
+Scanning: 192.168.2.45
+Scanning: 192.168.2.46
+Scanning: 192.168.2.47
+Scanning: 192.168.2.48
+Scanning: 192.168.2.49
+Scanning: 192.168.2.50
+Scanning: 192.168.2.51
+Scanning: 192.168.2.52
+Scanning: 192.168.2.53
+Scanning: 192.168.2.54Scanning: 192.168.2.55Scanning: 192.168.2.56Scanning: 192.168.2.58
+
+
+
+Scanning: 192.168.2.57
+Scanning: 192.168.2.59
+Scanning: 192.168.2.60
+Scanning: 192.168.2.61
+Scanning: 192.168.2.62
+Scanning: 192.168.2.63
+Scanning: 192.168.2.64
+Scanning: 192.168.2.65Scanning: 192.168.2.66
+
+Scanning: 192.168.2.67
+Scanning: 192.168.2.68
+Scanning: 192.168.2.69
+Scanning: 192.168.2.70
+Scanning: 192.168.2.71
+Scanning: 192.168.2.72
+Scanning: 192.168.2.73
+Scanning: 192.168.2.74
+Scanning: 192.168.2.75
+Scanning: 192.168.2.76
+Scanning: 192.168.2.77Scanning: 192.168.2.78
+Scanning: 192.168.2.79
+
+Scanning: 192.168.2.80Scanning: 192.168.2.81
+Scanning: 192.168.2.82Scanning: 192.168.2.83
+
+Scanning: 192.168.2.84Scanning: 192.168.2.85
+Scanning: 192.168.2.86
+
+Scanning: 192.168.2.87Scanning: 192.168.2.88
+Scanning: 192.168.2.89Scanning: 192.168.2.90Scanning: 192.168.2.91
+
+Scanning: 192.168.2.92
+Scanning: 192.168.2.93Scanning: 192.168.2.94Scanning: 192.168.2.95
+Scanning: 192.168.2.96
+
+Scanning: 192.168.2.97
+
+Scanning: 192.168.2.98
+Scanning: 192.168.2.99
+Scanning: 192.168.2.100
+
+Scanning: 192.168.2.101
+Scanning: 192.168.2.102
+
+
+Scanning: 192.168.2.103
+Scanning: 192.168.2.104
+Scanning: 192.168.2.105
+Scanning: 192.168.2.106
+Scanning: 192.168.2.107
+Scanning: 192.168.2.108
+Scanning: 192.168.2.109
+Scanning: 192.168.2.110
+Scanning: 192.168.2.111
+Scanning: 192.168.2.112
+Scanning: 192.168.2.113Scanning: 192.168.2.114
+
+Scanning: 192.168.2.115
+Scanning: 192.168.2.116
+Scanning: 192.168.2.117
+Scanning: 192.168.2.118
+Scanning: 192.168.2.119
+Scanning: 192.168.2.120
+Scanning: 192.168.2.121
+Scanning: 192.168.2.122Scanning: 192.168.2.123
+
+Scanning: 192.168.2.124Scanning: 192.168.2.125
+Scanning: 192.168.2.126
+
+Scanning: 192.168.2.127Scanning: 192.168.2.128
+
+Scanning: 192.168.2.129
+Scanning: 192.168.2.130
+Scanning: 192.168.2.131
+Scanning: 192.168.2.132
+Scanning: 192.168.2.133
+Scanning: 192.168.2.134
+Scanning: 192.168.2.135Scanning: 192.168.2.136
+Scanning: 192.168.2.137
+Scanning: 192.168.2.138
+
+Scanning: 192.168.2.139
+Scanning: 192.168.2.140
+Scanning: 192.168.2.141
+Scanning: 192.168.2.142
+Scanning: 192.168.2.143
+Scanning: 192.168.2.144Scanning: 192.168.2.145
+
+Scanning: 192.168.2.146
+Scanning: 192.168.2.147Scanning: 192.168.2.148Scanning: 192.168.2.149
+Scanning: 192.168.2.150
+Scanning: 192.168.2.151
+Scanning: 192.168.2.152
+Scanning: 192.168.2.153
+Scanning: 192.168.2.154
+Scanning: 192.168.2.155
+Scanning: 192.168.2.156
+
+Scanning: 192.168.2.157
+Scanning: 192.168.2.158
+Scanning: 192.168.2.159
+Scanning: 192.168.2.160
+Scanning: 192.168.2.161
+Scanning: 192.168.2.162
+Scanning: 192.168.2.163
+Scanning: 192.168.2.164
+Scanning: 192.168.2.165
+Scanning: 192.168.2.166
+
+Scanning: 192.168.2.167Scanning: 192.168.2.168Scanning: 192.168.2.169
+Scanning: 192.168.2.170
+Scanning: 192.168.2.171Scanning: 192.168.2.172
+
+Scanning: 192.168.2.173
+Scanning: 192.168.2.174
+Scanning: 192.168.2.175
+Scanning: 192.168.2.176Scanning: 192.168.2.177
+
+Scanning: 192.168.2.178
+
+
+Scanning: 192.168.2.179
+Scanning: 192.168.2.180
+Scanning: 192.168.2.181
+Scanning: 192.168.2.182
+Scanning: 192.168.2.183
+Scanning: 192.168.2.184
+Scanning: 192.168.2.185
+Scanning: 192.168.2.186
+Scanning: 192.168.2.187
+Scanning: 192.168.2.188
+Scanning: 192.168.2.189
+Scanning: 192.168.2.190Scanning: 192.168.2.191
+
+Scanning: 192.168.2.192
+Scanning: 192.168.2.193
+Scanning: 192.168.2.194Scanning: 192.168.2.195
+Scanning: 192.168.2.196
+
+Scanning: 192.168.2.197
+Scanning: 192.168.2.198
+Scanning: 192.168.2.199
+Scanning: 192.168.2.200
+Scanning: 192.168.2.201Scanning: 192.168.2.202
+Scanning: 192.168.2.203Scanning: 192.168.2.204
+Scanning: 192.168.2.205
+Scanning: 192.168.2.206
+Scanning: 192.168.2.207
+Scanning: 192.168.2.208Scanning: 192.168.2.209
+Scanning: 192.168.2.210
+Scanning: 192.168.2.211
+Scanning: 192.168.2.212Scanning: 192.168.2.213
+Scanning: 192.168.2.214Scanning: 192.168.2.215Scanning: 192.168.2.216Scanning: 192.168.2.217
+
+
+Scanning: 192.168.2.218Scanning: 192.168.2.219
+
+Scanning: 192.168.2.220
+
+
+Scanning: 192.168.2.221
+Scanning: 192.168.2.222
+
+Scanning: 192.168.2.223Scanning: 192.168.2.224
+
+Scanning: 192.168.2.225
+Scanning: 192.168.2.226
+Scanning: 192.168.2.227
+Scanning: 192.168.2.228
+
+Scanning: 192.168.2.229
+Scanning: 192.168.2.230
+Scanning: 192.168.2.231
+
+Scanning: 192.168.2.232
+Scanning: 192.168.2.233
+Scanning: 192.168.2.234
+Scanning: 192.168.2.235
+Scanning: 192.168.2.236Scanning: 192.168.2.237
+
+Scanning: 192.168.2.238
+Scanning: 192.168.2.239
+Scanning: 192.168.2.240
+Scanning: 192.168.2.241
+Scanning: 192.168.2.242
+Scanning: 192.168.2.243
+Scanning: 192.168.2.244Scanning: 192.168.2.245
+
+Scanning: 192.168.2.246
+Scanning: 192.168.2.247
+Scanning: 192.168.2.248
+Scanning: 192.168.2.249
+Scanning: 192.168.2.250
+Scanning: 192.168.2.251
+Scanning: 192.168.2.252Scanning: 192.168.2.253Scanning: 192.168.2.254
+
+
+Network scan completed.
+Starting network scan: 192.168.2.0/24
+Scanning: 192.168.2.1
+Scanning: 192.168.2.2
+Scanning: 192.168.2.3
+Scanning: 192.168.2.4
+Scanning: 192.168.2.5
+Scanning: 192.168.2.6
+Scanning: 192.168.2.7
+Scanning: 192.168.2.8
+Scanning: 192.168.2.9
+Scanning: 192.168.2.10
+Scanning: 192.168.2.11
+Scanning: 192.168.2.12
+Scanning: 192.168.2.13
+Scanning: 192.168.2.14
+Scanning: 192.168.2.15
+Scanning: 192.168.2.16
+Scanning: 192.168.2.17
+Scanning: 192.168.2.18
+Scanning: 192.168.2.19
+Scanning: 192.168.2.20
+Scanning: 192.168.2.21
+Scanning: 192.168.2.22
+Scanning: 192.168.2.23
+Scanning: 192.168.2.24
+Scanning: 192.168.2.25
+Scanning: 192.168.2.26
+Scanning: 192.168.2.27
+Scanning: 192.168.2.28
+Scanning: 192.168.2.29
+Scanning: 192.168.2.30
+Scanning: 192.168.2.31
+Scanning: 192.168.2.32
+Scanning: 192.168.2.33
+Scanning: 192.168.2.34
+Scanning: 192.168.2.35
+Scanning: 192.168.2.36
+Scanning: 192.168.2.37
+Scanning: 192.168.2.38
+Scanning: 192.168.2.39
+Scanning: 192.168.2.40
+Scanning: 192.168.2.41
+Scanning: 192.168.2.42
+Scanning: 192.168.2.43
+Scanning: 192.168.2.44
+Scanning: 192.168.2.45
+Scanning: 192.168.2.46
+Scanning: 192.168.2.47
+Scanning: 192.168.2.48
+Scanning: 192.168.2.49Scanning: 192.168.2.50
+
+Scanning: 192.168.2.51
+Scanning: 192.168.2.52
+Scanning: 192.168.2.53
+Scanning: 192.168.2.54
+Scanning: 192.168.2.55
+Scanning: 192.168.2.56
+Scanning: 192.168.2.57
+Scanning: 192.168.2.58
+Scanning: 192.168.2.59
+Scanning: 192.168.2.60
+Scanning: 192.168.2.61Scanning: 192.168.2.62
+Scanning: 192.168.2.63
+Scanning: 192.168.2.64
+Scanning: 192.168.2.65Scanning: 192.168.2.66
+Scanning: 192.168.2.67Scanning: 192.168.2.68
+Scanning: 192.168.2.69
+
+Scanning: 192.168.2.70Scanning: 192.168.2.71
+
+Scanning: 192.168.2.72Scanning: 192.168.2.73
+
+Scanning: 192.168.2.74Scanning: 192.168.2.75
+Scanning: 192.168.2.76
+
+
+Scanning: 192.168.2.77
+
+Scanning: 192.168.2.78
+Scanning: 192.168.2.79Scanning: 192.168.2.80
+Scanning: 192.168.2.81
+Scanning: 192.168.2.82
+Scanning: 192.168.2.83
+
+Scanning: 192.168.2.84
+Scanning: 192.168.2.85
+Scanning: 192.168.2.86
+Scanning: 192.168.2.87Scanning: 192.168.2.88
+
+Scanning: 192.168.2.89
+Scanning: 192.168.2.90
+Scanning: 192.168.2.91
+Scanning: 192.168.2.92
+Scanning: 192.168.2.93
+Scanning: 192.168.2.94
+Scanning: 192.168.2.95
+Scanning: 192.168.2.96
+Scanning: 192.168.2.97
+Scanning: 192.168.2.98Scanning: 192.168.2.99Scanning: 192.168.2.100
+Scanning: 192.168.2.101
+
+Scanning: 192.168.2.102
+Scanning: 192.168.2.103Scanning: 192.168.2.104
+
+
+Scanning: 192.168.2.105
+Scanning: 192.168.2.106
+Scanning: 192.168.2.107
+Scanning: 192.168.2.108
+Scanning: 192.168.2.109
+Scanning: 192.168.2.110Scanning: 192.168.2.111
+
+Scanning: 192.168.2.112
+Scanning: 192.168.2.113
+Scanning: 192.168.2.114Scanning: 192.168.2.115
+Scanning: 192.168.2.116Scanning: 192.168.2.117
+Scanning: 192.168.2.118
+Scanning: 192.168.2.119Scanning: 192.168.2.120
+
+
+Scanning: 192.168.2.121
+Scanning: 192.168.2.122
+Scanning: 192.168.2.123
+Scanning: 192.168.2.124
+Scanning: 192.168.2.125
+
+Scanning: 192.168.2.126
+Scanning: 192.168.2.127
+Scanning: 192.168.2.128
+Scanning: 192.168.2.129
+Scanning: 192.168.2.130
+Scanning: 192.168.2.131
+Scanning: 192.168.2.132Scanning: 192.168.2.133
+
+Scanning: 192.168.2.134
+Scanning: 192.168.2.135
+Scanning: 192.168.2.136
+Scanning: 192.168.2.137
+Scanning: 192.168.2.138
+Scanning: 192.168.2.139
+Scanning: 192.168.2.140
+Scanning: 192.168.2.141
+Scanning: 192.168.2.142
+Scanning: 192.168.2.143
+Scanning: 192.168.2.144
+Scanning: 192.168.2.145
+Scanning: 192.168.2.146
+Scanning: 192.168.2.147
+Scanning: 192.168.2.148Scanning: 192.168.2.149
+
+Scanning: 192.168.2.150Scanning: 192.168.2.151
+Scanning: 192.168.2.152
+
+Scanning: 192.168.2.153Scanning: 192.168.2.154
+
+Scanning: 192.168.2.155
+Scanning: 192.168.2.156
+Scanning: 192.168.2.157Scanning: 192.168.2.158
+Scanning: 192.168.2.159
+Scanning: 192.168.2.160
+
+Scanning: 192.168.2.161
+Scanning: 192.168.2.162
+Scanning: 192.168.2.163Scanning: 192.168.2.164
+
+Scanning: 192.168.2.165Scanning: 192.168.2.166Scanning: 192.168.2.167
+Scanning: 192.168.2.168
+Scanning: 192.168.2.169Scanning: 192.168.2.170
+Scanning: 192.168.2.171
+Scanning: 192.168.2.172Scanning: 192.168.2.173
+Scanning: 192.168.2.174Scanning: 192.168.2.175Scanning: 192.168.2.176
+
+Scanning: 192.168.2.177
+
+
+Scanning: 192.168.2.178
+Scanning: 192.168.2.179
+Scanning: 192.168.2.180
+Scanning: 192.168.2.181
+
+Scanning: 192.168.2.182
+
+Scanning: 192.168.2.183
+Scanning: 192.168.2.184Scanning: 192.168.2.185
+Scanning: 192.168.2.186
+
+Scanning: 192.168.2.187
+Scanning: 192.168.2.188
+
+Scanning: 192.168.2.189
+Scanning: 192.168.2.190
+Scanning: 192.168.2.191
+Scanning: 192.168.2.192
+Scanning: 192.168.2.193
+Scanning: 192.168.2.194
+Scanning: 192.168.2.195
+Scanning: 192.168.2.196
+Scanning: 192.168.2.197
+Scanning: 192.168.2.198
+Scanning: 192.168.2.199
+Scanning: 192.168.2.200
+Scanning: 192.168.2.201
+Scanning: 192.168.2.202
+Scanning: 192.168.2.203
+Scanning: 192.168.2.204
+Scanning: 192.168.2.205
+Scanning: 192.168.2.206Scanning: 192.168.2.207Scanning: 192.168.2.208
+Scanning: 192.168.2.209
+
+Scanning: 192.168.2.210Scanning: 192.168.2.211Scanning: 192.168.2.212
+
+Scanning: 192.168.2.213
+Scanning: 192.168.2.214Scanning: 192.168.2.215
+
+Scanning: 192.168.2.216
+
+Scanning: 192.168.2.217
+Scanning: 192.168.2.218Scanning: 192.168.2.219
+Scanning: 192.168.2.220
+
+Scanning: 192.168.2.221Scanning: 192.168.2.222
+
+Scanning: 192.168.2.223
+Scanning: 192.168.2.224
+Scanning: 192.168.2.225
+
+Scanning: 192.168.2.226Scanning: 192.168.2.227
+Scanning: 192.168.2.228
+Scanning: 192.168.2.229
+
+Scanning: 192.168.2.230Scanning: 192.168.2.231Scanning: 192.168.2.232Scanning: 192.168.2.233
+Scanning: 192.168.2.234Scanning: 192.168.2.235Scanning: 192.168.2.236
+Scanning: 192.168.2.237
+
+
+
+Scanning: 192.168.2.238
+Scanning: 192.168.2.239
+Scanning: 192.168.2.240
+
+
+Scanning: 192.168.2.241
+Scanning: 192.168.2.242
+Scanning: 192.168.2.243
+Scanning: 192.168.2.244
+Scanning: 192.168.2.245
+Scanning: 192.168.2.246
+Scanning: 192.168.2.247
+Scanning: 192.168.2.248
+Scanning: 192.168.2.249
+Scanning: 192.168.2.250
+Scanning: 192.168.2.251
+Scanning: 192.168.2.252
+Scanning: 192.168.2.253
+Scanning: 192.168.2.254
+Network scan completed.
+Starting network scan: 192.168.2.0/24
+Scanning: 192.168.2.1
+Scanning: 192.168.2.2
+Scanning: 192.168.2.3
+Scanning: 192.168.2.4
+Scanning: 192.168.2.5
+Scanning: 192.168.2.6
+Scanning: 192.168.2.7
+Scanning: 192.168.2.8
+Scanning: 192.168.2.9
+Scanning: 192.168.2.10
+Scanning: 192.168.2.11
+Scanning: 192.168.2.12
+Scanning: 192.168.2.13
+Scanning: 192.168.2.14
+Scanning: 192.168.2.15
+Scanning: 192.168.2.16
+Scanning: 192.168.2.17
+Scanning: 192.168.2.18
+Scanning: 192.168.2.19
+Scanning: 192.168.2.20
+Scanning: 192.168.2.21
+Scanning: 192.168.2.22
+Scanning: 192.168.2.23
+Scanning: 192.168.2.24
+Scanning: 192.168.2.25
+Scanning: 192.168.2.26
+Scanning: 192.168.2.27
+Scanning: 192.168.2.28
+Scanning: 192.168.2.29
+Scanning: 192.168.2.30
+Scanning: 192.168.2.31
+Scanning: 192.168.2.32
+Scanning: 192.168.2.33
+Scanning: 192.168.2.34
+Scanning: 192.168.2.35
+Scanning: 192.168.2.36
+Scanning: 192.168.2.37
+Scanning: 192.168.2.38
+Scanning: 192.168.2.39
+Scanning: 192.168.2.40
+Scanning: 192.168.2.41
+Scanning: 192.168.2.42
+Scanning: 192.168.2.43
+Scanning: 192.168.2.44
+Scanning: 192.168.2.45
+Scanning: 192.168.2.46
+Scanning: 192.168.2.47
+Scanning: 192.168.2.48Scanning: 192.168.2.49Scanning: 192.168.2.50
+
+Scanning: 192.168.2.51
+
+Scanning: 192.168.2.52
+Scanning: 192.168.2.53
+Scanning: 192.168.2.54Scanning: 192.168.2.55
+
+Scanning: 192.168.2.56
+Scanning: 192.168.2.57
+Scanning: 192.168.2.58Scanning: 192.168.2.59Scanning: 192.168.2.60Scanning: 192.168.2.61
+Scanning: 192.168.2.62
+
+Scanning: 192.168.2.63
+
+Scanning: 192.168.2.64
+Scanning: 192.168.2.65
+Scanning: 192.168.2.66
+Scanning: 192.168.2.67
+Scanning: 192.168.2.68
+Scanning: 192.168.2.69
+Scanning: 192.168.2.70Scanning: 192.168.2.71
+Scanning: 192.168.2.72
+Scanning: 192.168.2.73
+Scanning: 192.168.2.74
+Scanning: 192.168.2.75
+Scanning: 192.168.2.76
+
+Scanning: 192.168.2.77
+Scanning: 192.168.2.78
+
+Scanning: 192.168.2.79
+Scanning: 192.168.2.80
+Scanning: 192.168.2.81
+Scanning: 192.168.2.82
+Scanning: 192.168.2.83Scanning: 192.168.2.84
+Scanning: 192.168.2.85
+
+Scanning: 192.168.2.86
+Scanning: 192.168.2.87
+Scanning: 192.168.2.88
+Scanning: 192.168.2.89
+Scanning: 192.168.2.90Scanning: 192.168.2.91
+Scanning: 192.168.2.92
+
+Scanning: 192.168.2.93
+Scanning: 192.168.2.94
+Scanning: 192.168.2.95Scanning: 192.168.2.96Scanning: 192.168.2.97
+Scanning: 192.168.2.98
+Scanning: 192.168.2.99
+Scanning: 192.168.2.100Scanning: 192.168.2.101
+Scanning: 192.168.2.102
+
+Scanning: 192.168.2.103Scanning: 192.168.2.104
+Scanning: 192.168.2.105
+Scanning: 192.168.2.106
+Scanning: 192.168.2.107
+Scanning: 192.168.2.108
+Scanning: 192.168.2.109
+
+Scanning: 192.168.2.110
+
+Scanning: 192.168.2.111Scanning: 192.168.2.112
+Scanning: 192.168.2.113Scanning: 192.168.2.114
+
+
+Scanning: 192.168.2.115
+Scanning: 192.168.2.116
+Scanning: 192.168.2.117
+
+Scanning: 192.168.2.118
+Scanning: 192.168.2.119
+Scanning: 192.168.2.120
+Scanning: 192.168.2.121Scanning: 192.168.2.122
+
+Scanning: 192.168.2.123
+Scanning: 192.168.2.124
+Scanning: 192.168.2.125
+Scanning: 192.168.2.126Scanning: 192.168.2.127
+Scanning: 192.168.2.128
+
+Scanning: 192.168.2.129Scanning: 192.168.2.130
+
+Scanning: 192.168.2.131
+Scanning: 192.168.2.132
+Scanning: 192.168.2.133
+Scanning: 192.168.2.134Scanning: 192.168.2.135
+
+Scanning: 192.168.2.136
+Scanning: 192.168.2.137
+Scanning: 192.168.2.138Scanning: 192.168.2.139
+Scanning: 192.168.2.140
+
+Scanning: 192.168.2.141
+Scanning: 192.168.2.142
+Scanning: 192.168.2.143
+Scanning: 192.168.2.144
+Scanning: 192.168.2.145
+Scanning: 192.168.2.146
+Scanning: 192.168.2.147
+Scanning: 192.168.2.148
+Scanning: 192.168.2.149
+Scanning: 192.168.2.150
+Scanning: 192.168.2.151
+Scanning: 192.168.2.152
+Scanning: 192.168.2.153Scanning: 192.168.2.154Scanning: 192.168.2.155
+Scanning: 192.168.2.156
+Scanning: 192.168.2.157
+Scanning: 192.168.2.158
+
+
+Scanning: 192.168.2.159Scanning: 192.168.2.160
+
+Scanning: 192.168.2.161
+Scanning: 192.168.2.162Scanning: 192.168.2.163
+Scanning: 192.168.2.164Scanning: 192.168.2.165
+Scanning: 192.168.2.166Scanning: 192.168.2.167
+
+Scanning: 192.168.2.168Scanning: 192.168.2.169
+Scanning: 192.168.2.170Scanning: 192.168.2.171
+Scanning: 192.168.2.172
+Scanning: 192.168.2.173
+
+Scanning: 192.168.2.174Scanning: 192.168.2.175
+Scanning: 192.168.2.176
+Scanning: 192.168.2.177
+
+
+Scanning: 192.168.2.178
+
+Scanning: 192.168.2.179Scanning: 192.168.2.180
+Scanning: 192.168.2.181
+Scanning: 192.168.2.182Scanning: 192.168.2.183Scanning: 192.168.2.184
+Scanning: 192.168.2.185
+
+Scanning: 192.168.2.186
+Scanning: 192.168.2.187
+Scanning: 192.168.2.188
+
+Scanning: 192.168.2.189Scanning: 192.168.2.190Scanning: 192.168.2.191
+
+
+
+
+Scanning: 192.168.2.192
+Scanning: 192.168.2.193
+Scanning: 192.168.2.194
+Scanning: 192.168.2.195
+Scanning: 192.168.2.196
+Scanning: 192.168.2.197
+Scanning: 192.168.2.198
+Scanning: 192.168.2.199
+Scanning: 192.168.2.200
+Scanning: 192.168.2.201
+Scanning: 192.168.2.202
+Scanning: 192.168.2.203Scanning: 192.168.2.204
+Scanning: 192.168.2.205Scanning: 192.168.2.206
+Scanning: 192.168.2.207Scanning: 192.168.2.208
+
+
+Scanning: 192.168.2.209Scanning: 192.168.2.210
+
+
+Scanning: 192.168.2.211
+Scanning: 192.168.2.212
+Scanning: 192.168.2.213Scanning: 192.168.2.214Scanning: 192.168.2.215Scanning: 192.168.2.216
+Scanning: 192.168.2.217
+
+
+Scanning: 192.168.2.218
+Scanning: 192.168.2.219
+Scanning: 192.168.2.220
+Scanning: 192.168.2.221
+Scanning: 192.168.2.222Scanning: 192.168.2.223
+Scanning: 192.168.2.224
+Scanning: 192.168.2.225Scanning: 192.168.2.226
+Scanning: 192.168.2.227
+
+Scanning: 192.168.2.228Scanning: 192.168.2.229
+Scanning: 192.168.2.230
+Scanning: 192.168.2.231
+
+
+
+Scanning: 192.168.2.232Scanning: 192.168.2.233
+Scanning: 192.168.2.234
+Scanning: 192.168.2.235
+
+Scanning: 192.168.2.236
+Scanning: 192.168.2.237
+Scanning: 192.168.2.238
+Scanning: 192.168.2.239
+Scanning: 192.168.2.240
+Scanning: 192.168.2.241
+Scanning: 192.168.2.242
+Scanning: 192.168.2.243
+Scanning: 192.168.2.244
+Scanning: 192.168.2.245Scanning: 192.168.2.246
+
+Scanning: 192.168.2.247
+Scanning: 192.168.2.248
+Scanning: 192.168.2.249Scanning: 192.168.2.250
+
+Scanning: 192.168.2.251
+Scanning: 192.168.2.252
+Scanning: 192.168.2.253
+Scanning: 192.168.2.254
+Network scan completed.
+Starting network scan: 192.168.2.0/24
+Scanning: 192.168.2.1
+Scanning: 192.168.2.2
+Scanning: 192.168.2.3
+Scanning: 192.168.2.4
+Scanning: 192.168.2.5
+Scanning: 192.168.2.6
+Scanning: 192.168.2.7
+Scanning: 192.168.2.8
+Scanning: 192.168.2.9
+Scanning: 192.168.2.10
+Scanning: 192.168.2.11
+Scanning: 192.168.2.12
+Scanning: 192.168.2.13
+Scanning: 192.168.2.14
+Scanning: 192.168.2.15
+Scanning: 192.168.2.16
+Scanning: 192.168.2.17
+Scanning: 192.168.2.18
+Scanning: 192.168.2.19
+Scanning: 192.168.2.20
+Scanning: 192.168.2.21
+Scanning: 192.168.2.22
+Scanning: 192.168.2.23
+Scanning: 192.168.2.24
+Scanning: 192.168.2.25
+Scanning: 192.168.2.26
+Scanning: 192.168.2.27
+Scanning: 192.168.2.31
+Scanning: 192.168.2.29Scanning: 192.168.2.30
+
+Scanning: 192.168.2.40
+Scanning: 192.168.2.33
+Scanning: 192.168.2.39
+Scanning: 192.168.2.32
+Scanning: 192.168.2.37
+Scanning: 192.168.2.28
+Scanning: 192.168.2.35Scanning: 192.168.2.34
+Scanning: 192.168.2.38
+
+Scanning: 192.168.2.36
+Scanning: 192.168.2.41Scanning: 192.168.2.42
+
+Scanning: 192.168.2.43
+Scanning: 192.168.2.44
+Scanning: 192.168.2.45
+Scanning: 192.168.2.46
+Scanning: 192.168.2.47
+Scanning: 192.168.2.48
+Scanning: 192.168.2.49
+Scanning: 192.168.2.50
+Scanning: 192.168.2.51
+Scanning: 192.168.2.52
+Scanning: 192.168.2.55Scanning: 192.168.2.54
+Scanning: 192.168.2.56
+Scanning: 192.168.2.57
+Scanning: 192.168.2.53
+
+Scanning: 192.168.2.58
+Scanning: 192.168.2.59
+Scanning: 192.168.2.60
+Scanning: 192.168.2.61
+Scanning: 192.168.2.62
+Scanning: 192.168.2.63
+Scanning: 192.168.2.64
+Scanning: 192.168.2.65
+Scanning: 192.168.2.66
+Scanning: 192.168.2.67
+Scanning: 192.168.2.68
+Scanning: 192.168.2.69
+Scanning: 192.168.2.70
+Scanning: 192.168.2.71
+Scanning: 192.168.2.72
+Scanning: 192.168.2.73
+Scanning: 192.168.2.74
+Scanning: 192.168.2.75Scanning: 192.168.2.76
+Scanning: 192.168.2.77
+Scanning: 192.168.2.78
+
+Scanning: 192.168.2.79Scanning: 192.168.2.80Scanning: 192.168.2.81
+
+
+Scanning: 192.168.2.82Scanning: 192.168.2.83
+Scanning: 192.168.2.84
+Scanning: 192.168.2.85Scanning: 192.168.2.86
+Scanning: 192.168.2.87
+Scanning: 192.168.2.88
+Scanning: 192.168.2.89Scanning: 192.168.2.90
+Scanning: 192.168.2.91
+
+
+Scanning: 192.168.2.92Scanning: 192.168.2.93
+Scanning: 192.168.2.94Scanning: 192.168.2.95Scanning: 192.168.2.96
+
+
+Scanning: 192.168.2.97
+
+Scanning: 192.168.2.98
+Scanning: 192.168.2.99
+Scanning: 192.168.2.100Scanning: 192.168.2.101
+Scanning: 192.168.2.102Scanning: 192.168.2.103
+
+
+
+Scanning: 192.168.2.104
+Scanning: 192.168.2.105
+Scanning: 192.168.2.106
+Scanning: 192.168.2.107
+Scanning: 192.168.2.108
+Scanning: 192.168.2.109
+Scanning: 192.168.2.110
+Scanning: 192.168.2.111Scanning: 192.168.2.112
+
+Scanning: 192.168.2.113
+Scanning: 192.168.2.115
+Scanning: 192.168.2.114
+Scanning: 192.168.2.116
+Scanning: 192.168.2.117
+Scanning: 192.168.2.118Scanning: 192.168.2.119
+Scanning: 192.168.2.120
+
+Scanning: 192.168.2.121
+Scanning: 192.168.2.122Scanning: 192.168.2.123
+Scanning: 192.168.2.124
+Scanning: 192.168.2.125
+
+Scanning: 192.168.2.126
+Scanning: 192.168.2.127
+Scanning: 192.168.2.128
+Scanning: 192.168.2.129
+Scanning: 192.168.2.130
+Scanning: 192.168.2.131
+Scanning: 192.168.2.132
+Scanning: 192.168.2.133
+Scanning: 192.168.2.134Scanning: 192.168.2.135
+Scanning: 192.168.2.136Scanning: 192.168.2.137
+
+
+Scanning: 192.168.2.138Scanning: 192.168.2.139
+Scanning: 192.168.2.140
+
+Scanning: 192.168.2.141Scanning: 192.168.2.142Scanning: 192.168.2.143
+Scanning: 192.168.2.144
+
+Scanning: 192.168.2.145
+Scanning: 192.168.2.146
+
+Scanning: 192.168.2.147Scanning: 192.168.2.148Scanning: 192.168.2.149
+
+Scanning: 192.168.2.150
+
+Scanning: 192.168.2.151Scanning: 192.168.2.152
+Scanning: 192.168.2.153
+Scanning: 192.168.2.154Scanning: 192.168.2.155
+
+Scanning: 192.168.2.156
+Scanning: 192.168.2.157Scanning: 192.168.2.158
+Scanning: 192.168.2.159
+Scanning: 192.168.2.160
+Scanning: 192.168.2.161
+Scanning: 192.168.2.162Scanning: 192.168.2.163
+
+Scanning: 192.168.2.164
+Scanning: 192.168.2.165
+Scanning: 192.168.2.166Scanning: 192.168.2.167Scanning: 192.168.2.168Scanning: 192.168.2.169
+
+
+
+
+Scanning: 192.168.2.170Scanning: 192.168.2.171
+
+Scanning: 192.168.2.172
+Scanning: 192.168.2.173
+
+Scanning: 192.168.2.174
+Scanning: 192.168.2.175
+Scanning: 192.168.2.176
+Scanning: 192.168.2.177
+Scanning: 192.168.2.178
+Scanning: 192.168.2.179
+Scanning: 192.168.2.180
+Scanning: 192.168.2.181
+Scanning: 192.168.2.182
+Scanning: 192.168.2.183Scanning: 192.168.2.184
+
+Scanning: 192.168.2.185
+Scanning: 192.168.2.186Scanning: 192.168.2.187
+
+Scanning: 192.168.2.188
+Scanning: 192.168.2.189
+Scanning: 192.168.2.190
+Scanning: 192.168.2.191
+Scanning: 192.168.2.192
+Scanning: 192.168.2.193
+Scanning: 192.168.2.194Scanning: 192.168.2.195
+Scanning: 192.168.2.196
+Scanning: 192.168.2.197
+Scanning: 192.168.2.198
+
+Scanning: 192.168.2.199Scanning: 192.168.2.200
+
+Scanning: 192.168.2.201
+Scanning: 192.168.2.202
+Scanning: 192.168.2.203
+Scanning: 192.168.2.204
+Scanning: 192.168.2.205Scanning: 192.168.2.206
+Scanning: 192.168.2.207
+Scanning: 192.168.2.208Scanning: 192.168.2.209
+Scanning: 192.168.2.210
+Scanning: 192.168.2.211
+Scanning: 192.168.2.212
+Scanning: 192.168.2.213
+Scanning: 192.168.2.214
+Scanning: 192.168.2.215Scanning: 192.168.2.216
+
+Scanning: 192.168.2.217Scanning: 192.168.2.218
+Scanning: 192.168.2.219
+Scanning: 192.168.2.220
+Scanning: 192.168.2.221
+Scanning: 192.168.2.222
+
+Scanning: 192.168.2.223
+Scanning: 192.168.2.224
+Scanning: 192.168.2.225
+
+
+Scanning: 192.168.2.226
+Scanning: 192.168.2.227
+Scanning: 192.168.2.228Scanning: 192.168.2.229
+
+Scanning: 192.168.2.230
+Scanning: 192.168.2.231Scanning: 192.168.2.232Scanning: 192.168.2.233
+Scanning: 192.168.2.234
+
+
+Scanning: 192.168.2.235
+Scanning: 192.168.2.236Scanning: 192.168.2.237
+
+Scanning: 192.168.2.238Scanning: 192.168.2.239
+
+Scanning: 192.168.2.240
+Scanning: 192.168.2.241
+Scanning: 192.168.2.242
+Scanning: 192.168.2.243
+Scanning: 192.168.2.244
+Scanning: 192.168.2.245
+Scanning: 192.168.2.246
+Scanning: 192.168.2.247
+Scanning: 192.168.2.248
+Scanning: 192.168.2.249
+Scanning: 192.168.2.250
+Scanning: 192.168.2.251
+Scanning: 192.168.2.252
+Scanning: 192.168.2.253
+Scanning: 192.168.2.254
+Network scan completed.
+master automation task failed task=PRESENCE
+Traceback (most recent call last):
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\webapi\automation68.py", line 241, in _execute
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\webapi\automation68.py", line 83, in _run_presence
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\webapi\main.py", line 373, in refresh_device_status
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\modules\device_manager.py", line 101, in get_devices
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\database\db.py", line 1236, in get_all_devices
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\database\db.py", line 408, in init_database
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\upgrade_backup.py", line 38, in backup_before_release
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Admin\\OneDrive\\Documents\\GitHub\\Quantrimangwww\\VERSION.txt'
+master automation task failed task=ALERT_RULES
+Traceback (most recent call last):
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\webapi\automation68.py", line 241, in _execute
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\webapi\automation68.py", line 105, in _run_alert_rules
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\modules\nms_v4.py", line 79, in evaluate_alert_rules
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\modules\nms_v4.py", line 13, in ensure_v4_tables
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\modules\advanced_pages.py", line 44, in ensure_advanced_tables
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\modules\advanced_pages.py", line 38, in _connect
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\database\db.py", line 408, in init_database
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\upgrade_backup.py", line 38, in backup_before_release
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Admin\\OneDrive\\Documents\\GitHub\\Quantrimangwww\\VERSION.txt'
+master automation task failed task=INCIDENT_RCA
+Traceback (most recent call last):
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\webapi\automation68.py", line 241, in _execute
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\webapi\automation68.py", line 111, in _run_incidents
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\webapi\ops40.py", line 487, in sync_incidents_and_rca
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\modules\nms_v9.py", line 141, in sync_incidents
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\modules\nms_v9.py", line 18, in ensure_v9_tables
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\modules\nms_v8.py", line 21, in ensure_v8_tables
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\modules\advanced_pages.py", line 38, in _connect
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\database\db.py", line 408, in init_database
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\upgrade_backup.py", line 38, in backup_before_release
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Admin\\OneDrive\\Documents\\GitHub\\Quantrimangwww\\VERSION.txt'
+master automation task failed task=SERVER_MONITOR
+Traceback (most recent call last):
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\webapi\automation68.py", line 241, in _execute
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\webapi\automation68.py", line 116, in _run_server_monitor
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\modules\server_monitor.py", line 136, in run_all_targets
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\modules\server_monitor.py", line 50, in ensure_server_monitor_tables
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\modules\advanced_pages.py", line 38, in _connect
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\database\db.py", line 408, in init_database
+  File "C:\Users\Admin\OneDrive\Documents\GitHub\Quantrimangwww\upgrade_backup.py", line 38, in backup_before_release
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Admin\\OneDrive\\Documents\\GitHub\\Quantrimangwww\\VERSION.txt'

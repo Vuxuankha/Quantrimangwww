@@ -1,0 +1,10 @@
+HOTFIX16Q1 - Git commit cleanup
+
+The application runtime_data directory is generated locally and must not be committed.
+If GitHub Desktop previously tried to include runtime_data, the .gitignore in this package prevents new runtime files from being staged.
+
+If runtime_data was already tracked in the repository, run this once from the repository root:
+  git rm -r --cached --ignore-unmatch runtime_data
+Then commit the removal plus .gitignore. The local runtime_data folder is NOT deleted by --cached.
+
+The LF -> CRLF messages in GitHub Desktop are warnings only. The actual commit failure is the inaccessible runtime_data/database/.web37.lock file.

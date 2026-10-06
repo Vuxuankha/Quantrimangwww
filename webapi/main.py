@@ -18,6 +18,10 @@ import os
 
 logger=logging.getLogger(__name__)
 
+def _web_only_browser_mode() -> bool:
+    return str(os.environ.get('NA_WEB_ONLY_BROWSER','')).strip().lower() in ('1','true','yes','on')
+
+
 @asynccontextmanager
 async def lifespan(app):
     global AUTO_ENGINE
@@ -43,6 +47,8 @@ async def lifespan(app):
         ensure_cybersecurity58_tables(); start_local_endpoint_monitor()
         from webapi.cybersecurity59 import ensure_tables59 as ensure_cybersecurity59_tables
         ensure_cybersecurity59_tables()
+        from webapi.routerapi69 import ensure_tables69 as ensure_router_api69_tables
+        ensure_router_api69_tables()
         if backup:
             (DATABASE_DIR/'.web_migration_37.json').write_text(json.dumps({'backup':str(backup),'version':VERSION}),encoding='utf-8')
         from webapi.ops40 import ensure_tables as ensure_v40_tables
@@ -476,6 +482,8 @@ def _validate_scan_scope(network: str):
 
 def _run_scan(network:str,max_workers:int=32,timeout:int=800,callback=None,stop_event=None):
     """Run an authorized scan and record observations without silently changing inventory."""
+    if _web_only_browser_mode():
+        raise HTTPException(409, 'BROWSER_ONLY_LAN_SCAN_UNAVAILABLE: Render cannot scan the private LAN of the browser device. Server-side LAN scan is disabled to prevent scanning the host network.')
     net=_validate_scan_scope(network)
     found=scan_network(
         str(net),max_workers=min(max(int(max_workers),1),64),timeout=min(max(int(timeout),100),5000),
@@ -538,6 +546,8 @@ def web_scan_results(limit:int=500):
 @app.post('/api/scan-results/{result_id}/import')
 def import_scan_result(result_id:int):
     """Explicitly add one discovered host to inventory. Scanning itself never mutates inventory."""
+    if _web_only_browser_mode():
+        raise HTTPException(409, 'BROWSER_ONLY_SCAN_IMPORT_DISABLED: legacy server-side scan results cannot be imported on Render')
     with get_connection() as c:
         c.execute('CREATE TABLE IF NOT EXISTS web_scan_results(id INTEGER PRIMARY KEY AUTOINCREMENT,scan_key TEXT,network TEXT,ip TEXT,hostname TEXT,mac TEXT,status TEXT,latency_ms REAL,created_at TEXT)')
         r=c.execute('SELECT * FROM web_scan_results WHERE id=?',(result_id,)).fetchone()
@@ -1595,6 +1605,8 @@ from webapi.cybersecurity58 import router as cybersecurity58_router
 app.include_router(cybersecurity58_router)
 from webapi.cybersecurity59 import router as cybersecurity59_router
 app.include_router(cybersecurity59_router)
+from webapi.routerapi69 import router as routerapi69_router
+app.include_router(routerapi69_router)
 from webapi.automation68 import router as automation68_router
 app.include_router(automation68_router)
 from webapi.kali63 import router as kali63_router

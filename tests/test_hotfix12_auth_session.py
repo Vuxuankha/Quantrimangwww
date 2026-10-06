@@ -22,5 +22,5 @@ def test_login_cookie_security_follows_actual_request_scheme():
 
 def test_hotfix12_or_later_cache_buster_and_visible_version_marker():
     html=Path('webapi/static/index.html').read_text(encoding='utf-8')
-    assert 'app.js?v=6920' in html
-    assert 'Hotfix16O Web Production Standards' in html
+    assert 'app.js?v=6922' in html
+    assert 'Hotfix16Q Router API Provider' in html

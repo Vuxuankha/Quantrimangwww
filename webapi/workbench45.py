@@ -880,6 +880,8 @@ def ipmac_import_file(x:ImportIn,request:Request):
 @router.post('/ipmac/import-scan')
 def ipmac_import_scan(request:Request):
     require_role(request,'Admin')
+    if str(os.environ.get('NA_WEB_ONLY_BROWSER','')).strip().lower() in ('1','true','yes','on'):
+        raise HTTPException(409,'BROWSER_ONLY_SCAN_IMPORT_DISABLED: host-side scan import is disabled on Render')
     with connection() as c:
         latest=c.execute('SELECT scan_key FROM web_scan_results ORDER BY id DESC LIMIT 1').fetchone()
         if not latest:

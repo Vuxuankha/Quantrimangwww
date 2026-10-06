@@ -1,4 +1,4 @@
-"""Hotfix16O production gate for Render/Web deployment.
+"""Hotfix16Q production gate for Render/Web deployment.
 
 Pure-Python, no browser or Windows dependency. It validates the release's
 critical deployment, HTML, performance-budget and HTTPS/security invariants.
@@ -80,10 +80,10 @@ def main() -> int:
     gz=sum(len(gzip.compress(f.read_bytes(),compresslevel=9)) for f in initial_files)
     check('Initial raw budget <= 180 KB', raw<=180_000, str(raw))
     check('Initial gzip budget <= 60 KB', gz<=60_000, str(gz))
-    check('Versioned initial assets', 'style.css?v=6920' in index and 'app.js?v=6920' in index)
+    check('Versioned initial assets', 'style.css?v=6922' in index and 'app.js?v=6922' in index)
     check('Lazy loader after auth', 'await naLoadOperationalAssets()' in app and "state.user=await api('/auth/me')" in app)
 
-    feature_scripts=['workbench45.js','vendor/xterm.js','live46.js','terminal46.js','operations47.js','operations50.js','cybersecurity51.js','enterprise592.js','enterprise600.js','security_modes61.js','security_catalog62.js','kali63.js','hotfix9_kali_red.js','hotfix10_nav_core.js']
+    feature_scripts=['workbench45.js','vendor/xterm.js','live46.js','terminal46.js','operations47.js','operations50.js','routerapi69.js','cybersecurity51.js','enterprise592.js','enterprise600.js','security_modes61.js','security_catalog62.js','kali63.js','hotfix9_kali_red.js','hotfix10_nav_core.js']
     feature_styles=['workbench45.css','vendor/xterm.css','terminal46.css','operations47.css','operations50.css','cybersecurity51.css','enterprise592.css','enterprise600.css','security_modes61.css']
     missing_files=[n for n in feature_scripts+feature_styles if not (STATIC/n).is_file()]
     missing_manifest=[n for n in feature_scripts+feature_styles if repr(n) not in app]
@@ -103,15 +103,28 @@ def main() -> int:
 
     check('Health UI version', "UI_VERSION='6.9.0'" in runtime and "'ui_version':UI_VERSION" in main_src)
     check('Health core version explicit', "'core_version':VERSION" in main_src)
-    check('Health release explicit', "RELEASE='Hotfix16O Web Production Standards'" in runtime and "'release':RELEASE" in main_src)
+    check('Health release explicit', "RELEASE='Hotfix16Q Router API Provider'" in runtime and "'release':RELEASE" in main_src)
 
     check('Render Python start', 'startCommand: python render_start.py' in render)
     check('Render auto deploy', 'autoDeploy: true' in render)
     check('Browser-only mode', 'NA_WEB_ONLY_BROWSER' in render and 'value: "1"' in render)
+    autodiscovery=(ROOT/'webapi'/'autodiscovery5010.py').read_text(encoding='utf-8')
+    check('Direct LAN scan blocked on Render', 'BROWSER_ONLY_LAN_SCAN_UNAVAILABLE' in main_src)
+    check('Queued LAN scan blocked on Render', 'BROWSER_ONLY_LAN_SCAN_UNAVAILABLE' in routes)
+    check('Automatic LAN discovery blocked on Render', 'Browser-only mode: LAN discovery on the Render host is disabled' in autodiscovery)
+    router_src=(ROOT/'webapi'/'routerapi69.py').read_text(encoding='utf-8')
+    router_js=(STATIC/'routerapi69.js').read_text(encoding='utf-8')
+    check('Router API backend mounted', 'routerapi69_router' in main_src and "/router-api/clients" in router_src)
+    check('Router API private SSRF blocked', 'ROUTER_API_PRIVATE_DESTINATION_BLOCKED' in router_src and 'not addr.is_global' in router_src)
+    check('Router API redirects blocked', 'ROUTER_API_REDIRECT_BLOCKED' in router_src and '_NoRedirect69' in router_src)
+    check('Browser router secret not persisted', "provider in BROWSER_PROVIDERS" in router_src and "secret_enc=''; token_enc=''" in router_src)
+    check('Browser direct router UI', "/v69/router-api/browser-observations" in router_js and "mode:'cors'" in router_js)
+    check('Router API keeps Render LAN scan blocked', 'Host scan van bi khoa' in router_js)
+    check('Hosted UI explains LAN boundary', 'Đã khóa quét LAN trên Render' in app)
     check('No Windows action in hosted UI', '.bat' not in index.lower() and '.bat' not in app.lower())
     check('Render runtime dependencies', all(x in req for x in ('fastapi','uvicorn','pydantic','argon2-cffi')))
 
-    for path in [ROOT/'render_start.py', sec_path, main_path, runtime_path]:
+    for path in [ROOT/'render_start.py', sec_path, main_path, runtime_path, ROOT/'webapi'/'routerapi69.py']:
         try:
             compile(path.read_text(encoding='utf-8'), str(path), 'exec')
             ok=True; detail=''

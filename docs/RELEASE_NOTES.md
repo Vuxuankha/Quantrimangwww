@@ -1,3 +1,10 @@
+# Hotfix16Q Router API Provider
+
+- Hosted Web doc LAN client tu Router/Controller API thay vi scan host Render.
+- Them UniFi Cloud, MikroTik REST, Generic server HTTPS va Browser Direct HTTPS/CORS.
+- Them SSRF/private destination guard, redirect blocking va Browser Direct session-only credentials.
+- Full regression 116/116 PASS; production gate 48/48 PASS.
+
 # UI 6.9.0 Hotfix15 Scheduler/API Stability Fix
 
 This build is based on Hotfix14 and fixes the remaining QA findings from full functional testing.

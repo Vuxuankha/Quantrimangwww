@@ -667,6 +667,16 @@ def ensure(source='web-open', force=False):
     than five minutes ago is returned as RECENT instead of starting another scan.
     """
     global _THREAD
+    if str(os.environ.get('NA_WEB_ONLY_BROWSER','')).strip().lower() in ('1','true','yes','on'):
+        with _LOCK:
+            _STATE.update({
+                'state':'BROWSER_ONLY','network':'','source':source,
+                'started_at':None,'completed_at':utcnow(),'online':0,'active':0,
+                'icmp_online':0,'arp_only':0,'total':0,'imported':0,'scan_key':'',
+                'progress_done':0,'progress_total':0,'preliminary_active':0,'preliminary_devices':[],
+                'detail':'Browser-only mode: LAN discovery on the Render host is disabled. A website cannot enumerate the private LAN of the visiting device.'
+            })
+        return status()
     ensure_tables()
     with _LOCK:
         if _THREAD and _THREAD.is_alive():

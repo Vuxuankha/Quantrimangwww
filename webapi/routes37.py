@@ -1,6 +1,7 @@
 from __future__ import annotations
 import ipaddress
 import json
+import os
 from pathlib import Path
 from typing import Literal
 from fastapi import APIRouter,Request,HTTPException
@@ -34,6 +35,8 @@ def submit_job(x:JobIn,request:Request):
             found={r['id'] for r in c.execute(f'SELECT id FROM {table} WHERE id IN ('+','.join('?' for _ in ids)+')',ids)}
         if found!=set(ids): raise HTTPException(404,'Unregistered device ID')
     if x.operation=='SCAN':
+        if str(os.environ.get('NA_WEB_ONLY_BROWSER','')).strip().lower() in ('1','true','yes','on'):
+            raise HTTPException(409,'BROWSER_ONLY_LAN_SCAN_UNAVAILABLE: server-side LAN scan is disabled on Render')
         try: net=ipaddress.ip_network(x.network,strict=False)
         except ValueError: raise HTTPException(400,'Invalid CIDR')
         if net.version!=4 or net.num_addresses>1024 or not net.is_private or net.is_link_local or net.is_multicast or net.is_unspecified: raise HTTPException(400,'Pilot scanning: private IPv4 CIDR, maximum 1024 addresses')
@@ -145,6 +148,7 @@ STATIC_ASSETS = {
     'operations47.js': 'text/javascript',
     'operations47.css': 'text/css',
     'operations50.js': 'text/javascript',
+    'routerapi69.js': 'text/javascript',
     'operations50.css': 'text/css',
     'cybersecurity51.js': 'text/javascript',
     'cybersecurity51.css': 'text/css',
