@@ -16,6 +16,6 @@ def test_non_auth_401_must_confirm_session_before_login_screen():
 
 def test_hotfix13_assets_are_cache_busted_and_visible():
     html = (ROOT / 'webapi/static/index.html').read_text(encoding='utf-8')
-    assert 'app.js?v=6922' in html
+    assert 'app.js?v=6923' in html
     assert "'operations47.js'" in (ROOT / 'webapi/static/app.js').read_text(encoding='utf-8')
-    assert 'Hotfix16Q Router API Provider' in html
+    assert 'Hotfix16R Router Auto Sync' in html

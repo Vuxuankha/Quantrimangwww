@@ -149,6 +149,7 @@ STATIC_ASSETS = {
     'operations47.css': 'text/css',
     'operations50.js': 'text/javascript',
     'routerapi69.js': 'text/javascript',
+    'routerapi70.js': 'text/javascript',
     'operations50.css': 'text/css',
     'cybersecurity51.js': 'text/javascript',
     'cybersecurity51.css': 'text/css',

@@ -77,3 +77,7 @@ Router API chi tao observation. Chi Admin moi co the bam `Nhap vao Inventory`. C
 
 ## Luu y quan trong
 Neu router chi co `http://192.168.x.x`, website HTTPS tren Render khong duoc phep goi truc tiep vi mixed content. Can HTTPS API hoac cloud/public HTTPS integration.
+
+
+## Hotfix16R Router Auto Sync
+Dashboard tu dong sync Router API va Admin tu dong import client private hop le vao Inventory. Neu Router API chua cau hinh, Dashboard hien canh bao va nut mo trang Khám phá mạng. Master Automation khong con chay host LAN discovery; cloud/WAN Router API duoc sync nen co the chay khi may nguoi dung tat. Browser Direct van can mot browser trong cung LAN.

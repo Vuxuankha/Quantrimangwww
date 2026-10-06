@@ -1,4 +1,4 @@
-# NetworkAutomation Cybersecurity UI 6.9.0 - Hotfix16Q Router API Provider
+# NetworkAutomation Cybersecurity UI 6.9.0 - Hotfix16R Router Auto Sync
 
 Ban hosted Web/Render chay doc lap tren may chu. Nguoi dung chi can trinh duyet tren may tinh hoac dien thoai; khong can BAT, Agent, PowerShell hay dich vu Windows cuc bo.
 

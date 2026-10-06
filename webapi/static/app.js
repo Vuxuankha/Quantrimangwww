@@ -1,9 +1,9 @@
 'use strict';
 const $=s=>document.querySelector(s), esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const state={uiReady:false,user:null,csrf:'',page:'dashboard',cache:[],busy:false,actionCount:0,render:0,live:true,setupDeviceId:null,groupOpen:{},operation:null,jobWatchToken:0,lastHealthAt:0};
-const NA_UI_VERSION='6.9.0', NA_RELEASE='Hotfix16Q Router API Provider', NA_ASSET_VERSION='6922';
+const NA_UI_VERSION='6.9.0', NA_RELEASE='Hotfix16R Router Auto Sync', NA_ASSET_VERSION='6923';
 const naFeatureStyles=['workbench45.css','vendor/xterm.css','terminal46.css','operations47.css','operations50.css','cybersecurity51.css','enterprise592.css','enterprise600.css','security_modes61.css'];
-const naFeatureScripts=['workbench45.js','vendor/xterm.js','live46.js','terminal46.js','operations47.js','operations50.js','routerapi69.js','cybersecurity51.js','enterprise592.js','enterprise600.js','security_modes61.js','security_catalog62.js','kali63.js','hotfix9_kali_red.js','hotfix10_nav_core.js'];
+const naFeatureScripts=['workbench45.js','vendor/xterm.js','live46.js','terminal46.js','operations47.js','operations50.js','routerapi69.js','cybersecurity51.js','enterprise592.js','enterprise600.js','security_modes61.js','security_catalog62.js','kali63.js','hotfix9_kali_red.js','hotfix10_nav_core.js','routerapi70.js'];
 let naFeatureAssetsPromise=null;
 function naLoadStyle(name){return new Promise((resolve,reject)=>{const href=`/static/${name}?v=${NA_ASSET_VERSION}`;if(document.querySelector(`link[data-na-feature="${name}"]`))return resolve();const el=document.createElement('link');el.rel='stylesheet';el.href=href;el.dataset.naFeature=name;el.onload=()=>resolve();el.onerror=()=>reject(new Error('Không tải được '+name));document.head.appendChild(el);});}
 function naLoadScript(name){return new Promise((resolve,reject)=>{if(document.querySelector(`script[data-na-feature="${name}"]`))return resolve();const el=document.createElement('script');el.src=`/static/${name}?v=${NA_ASSET_VERSION}`;el.dataset.naFeature=name;el.async=false;el.onload=()=>resolve();el.onerror=()=>reject(new Error('Không tải được '+name));document.head.appendChild(el);});}
@@ -280,6 +280,7 @@ window.na461CheckAssets=function(){
   ['operations47.js',()=>typeof window.ops47==='object'],
   ['operations50.js',()=>window.__NA50_LOADED__===true],
   ['routerapi69.js',()=>typeof window.naRouterApi69==='object'],
+  ['routerapi70.js',()=>typeof window.naRouterApi70==='object'],
   ['workbench45.js',()=>typeof window.refreshPing45==='function'&&typeof window.syncRunControls45==='function'],
   ['live46.js',()=>typeof window.patchHTML46==='function'&&typeof window.refreshPage46==='function'],
   ['vendor/xterm.js',()=>typeof window.XtermBundle?.Terminal==='function'&&typeof window.XtermBundle?.FitAddon==='function'],

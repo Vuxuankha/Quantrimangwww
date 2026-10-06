@@ -124,7 +124,7 @@ def test_authoritative_white_hat_navigation_has_all_real_page_ids():
 
 def test_hotfix14_visible_release_marker_and_cache_buster():
     html=(ROOT/'webapi/static/index.html').read_text(encoding='utf-8')
-    assert 'Hotfix16Q Router API Provider' in html
-    assert 'app.js?v=6922' in html
+    assert 'Hotfix16R Router Auto Sync' in html
+    assert 'app.js?v=6923' in html
     assert "'kali63.js'" in (ROOT/'webapi/static/app.js').read_text(encoding='utf-8')
     assert "'hotfix10_nav_core.js'" in (ROOT/'webapi/static/app.js').read_text(encoding='utf-8')

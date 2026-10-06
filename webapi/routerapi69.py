@@ -467,6 +467,51 @@ def _save_observations(provider: str, clients: list[dict[str, Any]]) -> None:
         c.commit()
 
 
+def _import_clients_internal(clients: list[dict[str, Any]]) -> dict[str, Any]:
+    """Import validated router clients into Inventory without performing any LAN scan."""
+    clean=_validate_reported_clients(clients)
+    from database.db import get_device_by_ip
+    from modules.device_manager import DeviceManager
+    manager=DeviceManager()
+    added=0; existing=0; skipped=0
+    for row in clean:
+        ip=row.get('ip') or ''
+        if not ip:
+            skipped+=1; continue
+        if get_device_by_ip(ip):
+            existing+=1; continue
+        result=manager.add_device(ip,row.get('hostname') or '',row.get('mac') or '',
+                                  'Online' if str(row.get('status') or '').lower()=='online' else 'Unknown',None)
+        if result.get('success'):
+            added+=1
+        else:
+            skipped+=1
+    return {'ok':True,'added':added,'existing':existing,'skipped':skipped,'total':len(clean)}
+
+
+def sync_server_provider69(auto_import: bool=True) -> dict[str, Any]:
+    """Safe background sync for providers reachable from Render.
+
+    Browser-direct providers are never fetched by the server. This helper never
+    scans a subnet; it only calls the configured public/cloud Router API.
+    """
+    cfg=_read_config(True)
+    if not cfg.get('enabled'):
+        return {'ok':True,'state':'DISABLED','provider':cfg.get('provider'),'count':0,'imported':0}
+    provider=str(cfg.get('provider') or '')
+    if provider in BROWSER_PROVIDERS:
+        return {'ok':True,'state':'BROWSER_REQUIRED','provider':provider,'count':0,'imported':0}
+    rows=_validate_reported_clients(fetch_clients(cfg))
+    _save_observations(provider, rows)
+    imp={'added':0,'existing':0,'skipped':0,'total':len(rows)}
+    opts=cfg.get('options') or {}
+    if auto_import and bool(opts.get('auto_import', True)):
+        imp=_import_clients_internal(rows)
+    return {'ok':True,'state':'SYNCED','provider':provider,'count':len(rows),
+            'imported':int(imp.get('added') or 0),'existing':int(imp.get('existing') or 0),
+            'skipped':int(imp.get('skipped') or 0),'observed_at':utcnow()}
+
+
 def browser_connect_origin() -> str:
     """Exact CSP connect-src origin for the configured browser-direct router."""
     try:
@@ -562,9 +607,15 @@ def clients(request: Request):
     return {'provider':cfg.get('provider'),'execution':'SERVER','count':len(rows),'clients':rows,'observed_at':utcnow()}
 
 
+@router.post('/router-api/sync')
+def router_sync(request: Request):
+    require_role(request, 'Admin')
+    return sync_server_provider69(auto_import=True)
+
+
 @router.post('/router-api/browser-observations')
 def browser_observations(body: RouterObservationIn, request: Request):
-    require_role(request, 'Admin', 'Operator')
+    user=require_role(request, 'Admin', 'Operator')
     cfg=_read_config(False)
     if cfg.get('provider') not in BROWSER_PROVIDERS:
         raise HTTPException(409, 'ROUTER_API_NOT_BROWSER_DIRECT')
@@ -572,7 +623,10 @@ def browser_observations(body: RouterObservationIn, request: Request):
         raise HTTPException(400, 'ROUTER_API_PROVIDER_MISMATCH')
     clean=_validate_reported_clients(body.clients)
     _save_observations(str(body.provider), clean)
-    return {'ok':True,'count':len(clean),'clients':clean,'observed_at':utcnow()}
+    imp={'added':0,'existing':0,'skipped':0,'total':len(clean)}
+    if user.get('role')=='Admin' and bool((cfg.get('options') or {}).get('auto_import', True)):
+        imp=_import_clients_internal(clean)
+    return {'ok':True,'count':len(clean),'clients':clean,'import':imp,'observed_at':utcnow()}
 
 
 @router.get('/router-api/observations')
@@ -587,20 +641,4 @@ def observations(request: Request, limit: int = 500):
 @router.post('/router-api/import')
 def import_clients(body: RouterImportIn, request: Request):
     require_role(request, 'Admin')
-    clean=_validate_reported_clients(body.clients)
-    from database.db import get_device_by_ip
-    from modules.device_manager import DeviceManager
-    manager=DeviceManager()
-    added=0; existing=0; skipped=0
-    for row in clean:
-        ip=row.get('ip') or ''
-        if not ip:
-            skipped+=1; continue
-        if get_device_by_ip(ip):
-            existing+=1; continue
-        result=manager.add_device(ip,row.get('hostname') or '',row.get('mac') or '','Online' if row.get('status')=='Online' else 'Unknown',None)
-        if result.get('success'):
-            added+=1
-        else:
-            skipped+=1
-    return {'ok':True,'added':added,'existing':existing,'skipped':skipped,'total':len(clean)}
+    return _import_clients_internal(body.clients)

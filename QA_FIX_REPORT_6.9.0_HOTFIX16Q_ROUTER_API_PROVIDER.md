@@ -1,4 +1,4 @@
-# QA FIX REPORT - 6.9.0 Hotfix16Q Router API Provider
+# QA FIX REPORT - 6.9.0 Hotfix16R Router Auto Sync
 
 ## Muc tieu
 Thay the hanh vi LAN scan sai tren hosted Render bang Router/Controller API, khong quay lai Local Agent va khong quet subnet cua host.
@@ -19,7 +19,7 @@ Thay the hanh vi LAN scan sai tren hosted Render bang Router/Controller API, kho
 - LAN scan cu tren Render van bi hard-block o `/api/scan`, queued `SCAN` va auto discovery.
 - Trang scan tu refresh Router API khi mo trang, throttle 30 giay.
 - Asset cache-buster: `6922`.
-- Release: `Hotfix16Q Router API Provider`.
+- Release: `Hotfix16R Router Auto Sync`.
 
 ## QA
 - Full pytest: 116/116 PASS.

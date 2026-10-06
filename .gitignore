@@ -18,3 +18,12 @@ venv/
 Thumbs.db
 *.tmp
 *.temp
+
+# Local SQLite/runtime state - Render creates its own database under NETWORK_AUTOMATION_DATA_DIR
+database/*.db
+database/*.db-wal
+database/*.db-shm
+database/*.lock
+database/.credential.key
+database/known_hosts
+database/db_backups/

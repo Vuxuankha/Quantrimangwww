@@ -10,7 +10,7 @@ import uuid
 
 VERSION='5.9.2-cybersecurity'
 UI_VERSION='6.9.0'
-RELEASE='Hotfix16Q Router API Provider'
+RELEASE='Hotfix16R Router Auto Sync'
 SERVICE = 'networkautomation-operational-web'
 
 def utcnow():

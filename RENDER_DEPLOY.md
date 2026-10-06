@@ -1,4 +1,4 @@
-# Deploy NetworkAutomation len Render - Hotfix16Q Router API Provider
+# Deploy NetworkAutomation len Render - Hotfix16R Router Auto Sync
 
 ## Cach deploy
 - Ket noi repository Git voi Render.

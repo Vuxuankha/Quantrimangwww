@@ -90,13 +90,17 @@ def _run_presence(actor_id: int, username: str) -> dict:
 
 
 def _run_discovery(actor_id: int, username: str) -> dict:
-    from webapi.autodiscovery5010 import ensure
-    r = ensure(source='master-auto-6.8', force=False)
+    # Hotfix16R: Web-only discovery comes from the configured Router API.
+    # This never scans the Render host LAN. Browser-direct providers require an
+    # active browser session; cloud/WAN providers can sync in the background.
+    from webapi.routerapi69 import sync_server_provider69
+    r = sync_server_provider69(auto_import=True)
     return {
         'state': r.get('state'),
-        'network': r.get('network'),
-        'active': int(r.get('active') or r.get('preliminary_active') or 0),
-        'detail': str(r.get('detail') or '')[:300],
+        'provider': r.get('provider'),
+        'active': int(r.get('count') or 0),
+        'imported': int(r.get('imported') or 0),
+        'detail': 'Router API sync; host LAN scan disabled',
     }
 
 
@@ -140,7 +144,7 @@ def _run_database_backup(actor_id: int, username: str) -> dict:
 
 TASKS = [
     TaskSpec('PRESENCE', 'Trạng thái Online / Offline', 60, _run_presence),
-    TaskSpec('LIVE_DISCOVERY', 'Quét IP đang dùng trong LAN', 300, _run_discovery),
+    TaskSpec('LIVE_DISCOVERY', 'Đồng bộ thiết bị từ Router API', 120, _run_discovery),
     TaskSpec('ALERT_RULES', 'Đánh giá Alert Rules', 120, _run_alert_rules),
     TaskSpec('INCIDENT_RCA', 'Đồng bộ Sự cố / RCA', 180, _run_incidents),
     TaskSpec('SERVER_MONITOR', 'Kiểm tra Server / Service', 180, _run_server_monitor),

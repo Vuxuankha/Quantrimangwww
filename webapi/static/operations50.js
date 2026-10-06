@@ -83,7 +83,7 @@ async function checkBrowser16n(){
  try{const p=await api('/v59/browser/probe?ts='+Date.now());browser16n.active=true;browser16n.probe=p;paintBrowserIp16n(p);paintBrowserNetwork16n(p);return p;}
  catch(e){browser16n.active=false;const net=ensureNetworkChip50();net.textContent='Mạng: lỗi';net.className='network-chip50 offline';net.title=e.message||String(e);const ip=ensureIpChip5011();ip.textContent='IP mạng: lỗi';ip.className='network-chip50 offline';return null;}
 }
-function paintBrowserIp16n(p){const chip=ensureIpChip5011();const ip=p?.public_ip||'';ip5011.data={source:'BROWSER',ipv4:ip,adapter:'Browser / HTTPS',network:'',gateway:''};chip.textContent='IP mạng: '+(ip||'—');chip.className='network-chip50 '+(ip?'online':'unknown');chip.title='IP Internet công khai của thiết bị đang mở Web, tự nhận từ kết nối HTTPS.';}
+function paintBrowserIp16n(p){const chip=ensureIpChip5011();const ip=p?.public_ip||'';ip5011.data={source:'BROWSER',ipv4:ip,adapter:'Browser / HTTPS',network:'',gateway:''};chip.textContent='IP Internet: '+(ip||'—');chip.className='network-chip50 '+(ip?'online':'unknown');chip.title='IP Internet công khai của thiết bị đang mở Web, tự nhận từ kết nối HTTPS.';}
 function paintBrowserNetwork16n(){const chip=ensureNetworkChip50();chip.textContent='Mạng: WEB';chip.className='network-chip50 online';chip.title='Web đang hoạt động và kiểm tra kết nối trực tiếp từ trình duyệt.';}
 
 const ip5011={data:null,busy:false};
@@ -97,8 +97,8 @@ function ensureIpChip5011(){
 }
 function paintIp5011(r){
  const chip=ensureIpChip5011();ip5011.data=r;const ip=r?.ipv4||'';
- chip.textContent='IP mạng: '+(ip||'không có');chip.className='network-chip50 '+(ip?'online':'offline');
- chip.title=ip?`${r.adapter||'Browser / HTTPS'} · IP Internet công khai`:'Không xác định được IP mạng.';
+ chip.textContent='IP Internet: '+(ip||'không có');chip.className='network-chip50 '+(ip?'online':'offline');
+ chip.title=ip?`${r.adapter||'Browser / HTTPS'} · IP Internet công khai`:'Không xác định được IP Internet công khai.';
  if(r?.changed_since_start){chip.className='network-chip50 lan';chip.textContent='IP đổi: '+ip;}
 }
 async function checkIp5011(force=false){

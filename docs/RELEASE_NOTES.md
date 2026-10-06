@@ -1,4 +1,4 @@
-# Hotfix16Q Router API Provider
+# Hotfix16R Router Auto Sync
 
 - Hosted Web doc LAN client tu Router/Controller API thay vi scan host Render.
 - Them UniFi Cloud, MikroTik REST, Generic server HTTPS va Browser Direct HTTPS/CORS.
