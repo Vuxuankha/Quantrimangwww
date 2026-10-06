@@ -1,0 +1,6 @@
+/* 5.0 production additions */
+code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--text)}
+details{margin-top:10px;border:1px solid var(--line);border-radius:10px;padding:10px;background:rgba(5,20,30,.28)}
+details summary{cursor:pointer;font-weight:700}details pre{white-space:pre-wrap;overflow-wrap:anywhere;max-height:360px;overflow:auto}
+
+.network-chip50{border:1px solid var(--line);border-radius:999px;padding:6px 10px;font-size:12px;font-weight:800;background:rgba(15,40,54,.85);color:var(--text);white-space:nowrap}.network-chip50.online{border-color:#1f8f6b;color:#8ff1cb}.network-chip50.lan{border-color:#c1922f;color:#ffd77a}.network-chip50.offline{border-color:#a64150;color:#ff9eaa}.network-chip50.unknown{opacity:.8}

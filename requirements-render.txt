@@ -1,0 +1,4 @@
+# Render uses the same complete dependency set as the application.
+# This avoids a missing-uvicorn failure even when the service build command
+# is later simplified to `pip install -r requirements.txt`.
+-r requirements.txt

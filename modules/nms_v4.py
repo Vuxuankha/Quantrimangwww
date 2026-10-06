@@ -1,0 +1,190 @@
+from modules.ui_theme import PALETTE as UI_COLORS
+import socket, threading, time
+from datetime import datetime
+try:
+    import tkinter as tk
+    from tkinter import ttk, messagebox
+except (ImportError, ModuleNotFoundError):
+    tk = ttk = messagebox = None
+from modules.advanced_pages import _connect, _now, snmp_get, ensure_advanced_tables, _ber_tlv, _ber_oid, _ber_int, _ber_str, _read_tlv, _decode_oid, _decode_value
+
+
+def ensure_v4_tables():
+    ensure_advanced_tables()
+    c=_connect()
+    try:
+        c.executescript('''
+        CREATE TABLE IF NOT EXISTS alert_rule_state(
+          rule_id INTEGER NOT NULL, host TEXT NOT NULL, active INTEGER DEFAULT 0,
+          last_value REAL, last_change TEXT, last_message TEXT,
+          PRIMARY KEY(rule_id,host));
+        CREATE TABLE IF NOT EXISTS discovery_links(
+          id INTEGER PRIMARY KEY AUTOINCREMENT, protocol TEXT, local_host TEXT,
+          local_port TEXT, remote_name TEXT, remote_port TEXT, discovered_at TEXT,
+          UNIQUE(protocol,local_host,local_port,remote_name,remote_port));
+        ''')
+        c.commit()
+    finally:c.close()
+
+
+def snmp_getnext(host, community, oid, port=161, timeout=1.2):
+    request_id=int(time.time()*1000000)&0x7fffffff
+    vb=_ber_tlv(0x30,_ber_oid(oid)+_ber_tlv(0x05,b''))
+    pdu=_ber_tlv(0xA1,_ber_int(request_id)+_ber_int(0)+_ber_int(0)+_ber_tlv(0x30,vb))
+    packet=_ber_tlv(0x30,_ber_int(1)+_ber_str(community)+pdu)
+    s=socket.socket(socket.AF_INET,socket.SOCK_DGRAM);s.settimeout(timeout)
+    try:
+        try:
+            s.sendto(packet,(host,int(port)));data,_=s.recvfrom(65535)
+        except socket.timeout as exc:
+            raise TimeoutError(f'Thiết bị {host} không phản hồi SNMP UDP/{int(port)} trong {timeout:g} giây.') from exc
+    finally:s.close()
+    _,top,_=_read_tlv(data,0);p=0
+    _,_,p=_read_tlv(top,p);_,_,p=_read_tlv(top,p);tag,payload,p=_read_tlv(top,p)
+    if tag!=0xA2:raise RuntimeError('Phản hồi SNMP không hợp lệ')
+    q=0;_,_,q=_read_tlv(payload,q);_,errp,q=_read_tlv(payload,q);_,idxp,q=_read_tlv(payload,q)
+    if int.from_bytes(errp,'big',signed=True):raise RuntimeError('SNMP trả về lỗi')
+    _,vbl,q=_read_tlv(payload,q);q=0;_,vb,q=_read_tlv(vbl,q);z=0
+    _,op,z=_read_tlv(vb,z);vtag,vp,z=_read_tlv(vb,z)
+    return _decode_oid(op),_decode_value(vtag,vp)
+
+
+def snmp_walk(host, community, base_oid, limit=128, port=161, timeout=1.2):
+    out=[];cur=base_oid
+    for _ in range(limit):
+        nxt,val=snmp_getnext(host,community,cur,port=port,timeout=timeout)
+        if not (nxt==base_oid or nxt.startswith(base_oid+'.')):break
+        if nxt==cur:break
+        out.append((nxt,val));cur=nxt
+    return out
+
+
+def _latest_values(c, rule):
+    metric=rule['metric'];host=(rule['host'] or '').strip()
+    if metric in ('CPU %','RAM %','Mất gói %','Độ trễ ms'):
+        col={'CPU %':'cpu','RAM %':'memory','Mất gói %':'packet_loss','Độ trễ ms':'latency_ms'}[metric]
+        where=f'WHERE {col} IS NOT NULL'+(' AND host=?' if host else '')
+        rows=c.execute(f'''SELECT s.host,s.{col} v FROM health_samples s JOIN
+          (SELECT host,MAX(id) id FROM health_samples {where} GROUP BY host) x ON s.id=x.id''',(host,) if host else ()).fetchall()
+    else:
+        col='in_errors' if metric=='Lỗi cổng IN' else 'out_errors'
+        where=('WHERE host=?' if host else '')
+        rows=c.execute(f'''SELECT s.host,s.{col} v FROM interface_samples s JOIN
+          (SELECT host,MAX(id) id FROM interface_samples {where} GROUP BY host) x ON s.id=x.id''',(host,) if host else ()).fetchall()
+    return [(r['host'],float(r['v'])) for r in rows if r['v'] is not None]
+
+
+def evaluate_alert_rules():
+    """Đánh giá rule theo từng host. Chỉ tạo alert khi trạng thái đổi bình thường -> vi phạm."""
+    ensure_v4_tables();c=_connect();created=recovered=0
+    try:
+        rules=[dict(r) for r in c.execute('SELECT * FROM alert_rules WHERE enabled=1')]
+        for r in rules:
+            for host,val in _latest_values(c,r):
+                # v3.8: không tạo cảnh báo mới trong lịch bảo trì đang hiệu lực.
+                try:
+                    from modules.nms_v8 import active_maintenance_for_host
+                    if active_maintenance_for_host(host):
+                        continue
+                except Exception:
+                    pass
+                op=r['operator'];th=float(r['threshold']);bad={'>':val>th,'>=':val>=th,'<':val<th,'<=':val<=th}.get(op,False)
+                st=c.execute('SELECT * FROM alert_rule_state WHERE rule_id=? AND host=?',(r['id'],host)).fetchone();was=bool(st['active']) if st else False
+                msg=f"{r['name']}: {r['metric']} = {val:.2f} {op} {th:g}"
+                if bad and not was:
+                    c.execute("INSERT INTO alerts(ip,alert_type,message,status,created_at,severity) VALUES(?,?,?,?,?,?)",(host,'Rule',msg,'Open',_now(),r['severity']));created+=1
+                elif not bad and was:
+                    # Close open alerts generated by this rule/host and preserve incident history.
+                    prefix=f"{r['name']}:"
+                    cur=c.execute("UPDATE alerts SET status='Closed' WHERE ip=? AND alert_type='Rule' AND status<>'Closed' AND message LIKE ?",(host,prefix+'%'));recovered+=cur.rowcount
+                c.execute('''INSERT INTO alert_rule_state(rule_id,host,active,last_value,last_change,last_message)
+                  VALUES(?,?,?,?,?,?) ON CONFLICT(rule_id,host) DO UPDATE SET active=excluded.active,last_value=excluded.last_value,
+                  last_change=CASE WHEN alert_rule_state.active<>excluded.active THEN excluded.last_change ELSE alert_rule_state.last_change END,
+                  last_message=excluded.last_message''',(r['id'],host,1 if bad else 0,val,_now(),msg))
+        c.commit();return created,recovered
+    finally:c.close()
+
+
+class BackgroundAlertEngine:
+    def __init__(self,root,activity_callback=None,interval_ms=60000):
+        self.root=root;self.activity=activity_callback or (lambda m:None);self.interval_ms=interval_ms;self.job=None;self.running=True;self.thread=None
+        ensure_v4_tables();self.schedule(5000)
+    def schedule(self,delay=None):
+        if self.running:self.job=self.root.after(delay or self.interval_ms,self.tick)
+    def tick(self):
+        if not self.running:return
+        self.job=None
+        def work():
+            try:
+                a,b=evaluate_alert_rules()
+                if self.running and (a or b):self.root.after(0,lambda:self.activity(f'Cảnh báo nền: {a} mới, {b} đã phục hồi'))
+            finally:
+                try:
+                    if self.running:self.root.after(0,self.schedule)
+                except Exception:pass
+        self.thread=threading.Thread(target=work,daemon=True);self.thread.start()
+    def stop(self):
+        self.running=False
+        if self.job:
+            try:self.root.after_cancel(self.job)
+            except Exception:pass
+
+
+class AutoTopologyPage:
+    LLDP_NAME='1.0.8802.1.1.2.1.4.1.1.9'
+    LLDP_RPORT='1.0.8802.1.1.2.1.4.1.1.8'
+    CDP_NAME='1.3.6.1.4.1.9.9.23.1.2.1.1.6'
+    CDP_RPORT='1.3.6.1.4.1.9.9.23.1.2.1.1.7'
+    def __init__(self,parent,activity_callback=None):
+        ensure_v4_tables();self.parent=parent;self.activity=activity_callback or (lambda m:None);self.community=tk.StringVar(value='public');self.status=tk.StringVar(value='Sẵn sàng');self._build();self.refresh()
+    def _build(self):
+        ctl=tk.Frame(self.parent,bg=UI_COLORS['surface'],bd=1,relief='solid');ctl.pack(fill='x',padx=25,pady=(0,10))
+        tk.Label(ctl,text='SNMP Community',bg=UI_COLORS['surface']).pack(side='left',padx=(10,4),pady=10);tk.Entry(ctl,textvariable=self.community,width=16).pack(side='left')
+        tk.Button(ctl,text='Phát hiện LLDP/CDP',command=self.discover,bg=UI_COLORS['primary'],fg=UI_COLORS['text'],relief='flat').pack(side='left',padx=8)
+        tk.Button(ctl,text='Làm mới',command=self.refresh).pack(side='left');tk.Label(ctl,textvariable=self.status,bg=UI_COLORS['surface'],fg=UI_COLORS['muted']).pack(side='left',padx=10)
+        box=tk.Frame(self.parent,bg=UI_COLORS['surface'],bd=1,relief='solid');box.pack(fill='both',expand=True,padx=25,pady=(0,10));cols=('protocol','local','lport','remote','rport','time');self.t=ttk.Treeview(box,columns=cols,show='headings')
+        for c,h,w in [('protocol','Giao thức',90),('local','Thiết bị cục bộ',150),('lport','Cổng cục bộ',130),('remote','Thiết bị láng giềng',210),('rport','Cổng láng giềng',150),('time','Phát hiện lúc',160)]:self.t.heading(c,text=h);self.t.column(c,width=w,anchor='w')
+        self.t.pack(fill='both',expand=True,padx=8,pady=8)
+        tk.Label(self.parent,text='LLDP/CDP phải được bật trên thiết bị và SNMP v2c phải cho phép đọc các MIB tương ứng.',bg=UI_COLORS['background'],fg=UI_COLORS['muted']).pack(anchor='w',padx=25,pady=(0,8))
+    def refresh(self):
+        c=_connect();rows=c.execute('SELECT * FROM discovery_links ORDER BY discovered_at DESC').fetchall();c.close()
+        for x in self.t.get_children():self.t.delete(x)
+        for r in rows:self.t.insert('','end',values=(r['protocol'],r['local_host'],r['local_port'],r['remote_name'],r['remote_port'],r['discovered_at']))
+        self.status.set(f'{len(rows)} liên kết đã phát hiện')
+    @staticmethod
+    def _suffix(oid,base):return oid[len(base):].lstrip('.')
+    def discover(self):
+        c=_connect();dev=[dict(r) for r in c.execute("SELECT ip,name FROM network_devices WHERE ip IS NOT NULL AND TRIM(ip)<>''")];c.close()
+        if not dev:messagebox.showinfo('LLDP/CDP','Chưa có thiết bị trong mục Thiết bị mạng.');return
+        self.status.set('Đang đọc LLDP/CDP...')
+        def work():
+            found=[]
+            for d in dev:
+                host=d['ip']
+                for proto,bn,bp in [('LLDP',self.LLDP_NAME,self.LLDP_RPORT),('CDP',self.CDP_NAME,self.CDP_RPORT)]:
+                    try:
+                        names=snmp_walk(host,self.community.get(),bn);ports=dict((self._suffix(o,bp),v) for o,v in snmp_walk(host,self.community.get(),bp))
+                        for oid,name in names:
+                            suf=self._suffix(oid,bn);local_port=suf.split('.')[-2] if '.' in suf else suf;found.append((proto,host,local_port,str(name),str(ports.get(suf,''))))
+                    except Exception:pass
+            c=_connect()
+            try:
+                for row in found:c.execute('INSERT OR REPLACE INTO discovery_links(protocol,local_host,local_port,remote_name,remote_port,discovered_at) VALUES(?,?,?,?,?,?)',row+(_now(),))
+                # Map discovered neighbors to managed devices and feed the existing topology table.
+                devices=[dict(r) for r in c.execute('SELECT id,name,ip FROM network_devices')]
+                def match(text):
+                    t=(text or '').strip().lower()
+                    for x in devices:
+                        if t and (t==(x.get('name') or '').strip().lower() or t==(x.get('ip') or '').strip().lower()):return x
+                    return None
+                byip={x['ip']:x for x in devices if x.get('ip')}
+                for proto,lh,lp,rn,rp in found:
+                    a=byip.get(lh);b=match(rn)
+                    if a and b and a['id']!=b['id']:
+                        x,y=sorted((a['id'],b['id']));label=f'{proto}: {lp} ↔ {rp}'
+                        c.execute('INSERT OR IGNORE INTO device_links(source_device_id,target_device_id,label,created_at) VALUES(?,?,?,?)',(x,y,label,_now()))
+                c.commit()
+            finally:c.close()
+            self.parent.after(0,lambda:self._done(len(found)))
+        threading.Thread(target=work,daemon=True).start()
+    def _done(self,n):self.refresh();self.status.set(f'Hoàn tất: {n} láng giềng');self.activity(f'LLDP/CDP Discovery: {n} láng giềng')

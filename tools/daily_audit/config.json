@@ -1,0 +1,12 @@
+{
+  "HoursBack": 24,
+  "EventIds": [41, 6008, 10016, 4624, 4625, 4672],
+  "DiskFreeWarnPercent": 15,
+  "CpuWarnPercent": 85,
+  "MemoryWarnPercent": 85,
+  "FailedLoginWarnCount": 20,
+  "ReportDirectory": "C:\\DailyAudit\\Reports",
+  "BackupPaths": [],
+  "ExpectedListeningPorts": [80, 443, 3389],
+  "CheckDefender": true
+}

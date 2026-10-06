@@ -1,0 +1,9 @@
+{
+  "source": "Installed Microsoft Playwright trace viewer bundle",
+  "playwright_version": "1.57.0-beta-1764944708000",
+  "source_asset": "xtermModule-CsJ4vdCR.js",
+  "upstream": "https://github.com/xtermjs/xterm.js",
+  "upstream_version": "not separately asserted; bundled version from Playwright",
+  "modification": "Wrap in IIFE and replace ESM export with window.XtermBundle; no terminal core edits",
+  "sha256": "d792437d6bcb8b94253f44085bac29a30ff77cc52ce438ce1f4980ba956c3cd5"
+}

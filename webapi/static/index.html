@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NetworkAutomation web operations and cybersecurity console">
+  <meta name="color-scheme" content="dark">
+  <title>NetworkAutomation | Operations</title>
+  <link rel="stylesheet" href="/static/style.css?v=6920">
+  <script src="/static/app.js?v=6920" defer></script>
+</head>
+<body><div class="ambient-network" aria-hidden="true"></div>
+<div id="login-view" class="login-wrap">
+  <section class="login-shell" aria-label="Đăng nhập NetworkAutomation">
+    <div class="login-visual">
+      <div class="login-brandline"><span class="brand-mark">N</span><div><b>NETWORKAUTOMATION</b><small>OPERATIONS / CYBERSECURITY</small></div></div>
+      <div class="login-copy">
+        <p class="eyebrow">WEB SECURITY OPERATIONS</p>
+        <h2>Giám sát mạng rõ ràng.<br>Vận hành ổn định hơn.</h2>
+        <p>Giao diện Web cho giám sát, cảnh báo, SIEM, kiểm tra bảo mật và chất lượng kết nối từ thiết bị đang mở trang.</p>
+      </div>
+      <div class="login-points">
+        <span><i></i>Tự nhận IP Internet công khai của kết nối hiện tại</span>
+        <span><i></i>Dùng trực tiếp trên máy tính hoặc điện thoại</span>
+        <span><i></i>Tự kiểm tra backend và chất lượng kết nối HTTPS</span>
+      </div>
+      <div class="login-version">UI 6.9.0 · Hotfix16O Web Production Standards · Browser-only</div>
+    </div>
+    <form method="post" id="login-form" class="login-card" novalidate>
+      <div class="login-card-top"><div><p class="eyebrow">SECURE SIGN IN</p><h1>Đăng nhập hệ thống</h1></div><span id="login-api" class="login-api checking"><i></i><b>Đang kiểm tra</b></span></div>
+      <p class="muted">Dùng tài khoản Web đã được cấp hoặc đăng ký trực tiếp trên hệ thống.</p>
+      <label class="login-field"><span>Tài khoản</span><input name="username" required maxlength="64" autocomplete="username" placeholder="Ví dụ: Admin" autofocus></label>
+      <label class="login-field"><span>Mật khẩu</span><div class="password-wrap"><input id="login-password" type="password" name="password" required maxlength="256" autocomplete="current-password" placeholder="Nhập mật khẩu"><button id="password-toggle" class="password-toggle" type="button" aria-label="Hiện mật khẩu" title="Hiện/ẩn mật khẩu">Hiện</button></div></label>
+      <div id="login-error" class="error hidden" role="alert"></div>
+      <button id="login-submit" type="submit" class="primary wide" disabled><span>Đăng nhập</span></button>
+      <div class="login-tools"><button id="login-register" type="button" class="ghost-link" data-action="register-open">Đăng ký tài khoản</button><span>·</span><button id="login-recheck" type="button" class="ghost-link">Kiểm tra kết nối</button></div>
+      <p class="caption login-note">Bản triển khai Web chạy độc lập trên máy chủ. Không cần Agent, PowerShell hay thao tác Windows trên thiết bị người dùng.</p>
+    </form>
+  </section>
+</div>
+<div id="app" class="app hidden"><aside class="sidebar"><div class="sidebar-mobile-head"><span>NHÓM CHỨC NĂNG</span><button data-action="menu-close" aria-label="Đóng menu">&#x2715;</button></div><div class="brand"><span class="brand-mark">N</span><div>NETWORK<br>AUTOMATION<small>Cybersecurity / UI 6.9.0</small></div></div><label class="nav-search47">Tìm chức năng<input id="nav-search47" placeholder="Tìm trong menu..." aria-label="Tìm chức năng"></label><nav id="navigation" aria-label="Main navigation"></nav><div class="profile"><div><b id="user-name"></b><small id="user-role"></small></div><button data-action="logout" title="Đăng xuất">Thoát</button></div></aside><button id="nav-backdrop" class="nav-backdrop" data-action="menu-close" aria-label="Đóng menu chức năng"></button><main><header><div class="header-title"><button class="mobile-menu" data-action="menu-toggle" aria-label="Mở nhóm chức năng">☰ Chức năng</button><div><div class="eyebrow" id="breadcrumb">OPERATIONS CENTER</div><h1 id="title"></h1><p class="muted" id="subtitle"></p></div></div><div class="header-right"><button data-action="quick-find47" title="Ctrl+K">Tìm nhanh</button><button data-action="density47" title="Đổi mật độ hiển thị">Thu gọn</button><span id="api-state" class="badge unknown">Đang kiểm tra API</span><button id="live-toggle" data-action="live-toggle">Refresh: ON</button><button data-action="reload">Làm mới</button><small id="updated-at"></small></div></header><div class="notice">NetworkAutomation Cybersecurity UI 6.9.0: SOC Case Management, Asset Risk, Threat Intelligence, IOC Watchlist, MFA, SIEM, vulnerability assessment và API security; dữ liệu mạng vẫn phải có thời gian đo.</div><div id="system-alert47" class="notice hidden" role="status"></div><div id="connection-banner" class="notice hidden" role="status"></div><section id="operation-result" class="operation-result hidden" aria-live="polite"></section><section id="content" aria-live="polite"></section><section id="terminal-workspace" class="hidden" aria-label="SSH and Telnet terminal"></section></main></div>
+<div id="toast" role="status" class="toast hidden"></div>
+<dialog id="dialog"><div class="modal-head"><h2 id="dialog-title"></h2><button data-action="close-modal" aria-label="Đóng">&#x2715;</button></div><div id="dialog-body"></div></dialog>
+</body></html>
